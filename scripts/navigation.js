@@ -27,7 +27,7 @@ function changeActiveNav(activePhrase) {
     linkButton.classList.remove('active');
 
     switch (activePhrase) {
-        case "WDD231 Home Page":
+        case "Elaine Henson Home Page":
             homeButton.classList.add('active');
             break;
         case "Chamber of Commerce":
