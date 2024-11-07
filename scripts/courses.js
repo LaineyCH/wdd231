@@ -125,7 +125,7 @@ function generate_courses(filterPhrase) {
         {totalCredits: 0, incompleteCredits: 0} // Initial values
     );
     document.getElementById("credits-required").innerHTML =
-        `Credits Required: ${incompleteCredits} / ${totalCredits}`;
+        `<h3>Credits Required: ${incompleteCredits} / ${totalCredits}</h3>`;
 }
 
 function changeActiveButton(activePhrase) {

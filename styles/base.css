@@ -10,6 +10,7 @@
     --background: rgb(222, 222, 222);
     --dark-green: #02514e;
     --light-green: #76D7C4;
+    --lightest-green: #d5f8f1;
 }
 
 * {
@@ -28,13 +29,14 @@ body {
 header {
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: 1fr 1fr auto 2fr;
     grid-template-rows: auto auto ;
     background-color: var(--light-green);
     width: 100%;
+    align-items: center;
 }
 
-#headerimg {
+#header-img {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     max-height: 100px;
@@ -42,7 +44,7 @@ header {
     padding: 1rem;
 }
 
-#headertitle {
+#header-title {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     padding: 1rem;
@@ -58,7 +60,6 @@ h1, h2 {
 h1 {
     font-weight: 700;
 }
-
 
 .nav-bar {
     display: flex;
@@ -98,7 +99,7 @@ nav a:link {
 
 nav a:visited {
     text-decoration: none;
-    color: var(--sun-color);
+    color: var(--sand-color);
 }
 
 /* Main Section */
@@ -129,8 +130,7 @@ main {
 }
 
 #coursework-card ul {
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
     margin: 0;
     list-style-position: inside;
 }
@@ -149,6 +149,7 @@ main {
 
 #place-card p {
     text-align: center;
+    padding: 1rem;
 }
 
 #certificate-card {
@@ -159,6 +160,29 @@ main {
 #courses-buttons {
     display: flex;
     justify-content: center;
+}
+
+#courses-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* defined in JS */
+.course-div {
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: var(--font-page), sans-serif;
+    text-align: center;
+    margin: 1rem;
+    min-width: 250px;
+}
+
+#credits-required {
+    text-align: center;
+    padding: 1rem
 }
 
 button {
@@ -185,12 +209,7 @@ button:hover {
 }
 
 .completed-false {
-    background-color: var(--light-green);
-}
-
-.course-div {
-    padding: 1rem;
-    border-radius: 10px;
+    background-color: var(--lightest-green);
 }
 
 /* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
@@ -217,8 +236,8 @@ nav a:hover {
     background: none;
     color: white;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: -2px;
+    right: -20px;
 }
 
 /* appearance for the button when open class os off */

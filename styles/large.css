@@ -5,6 +5,10 @@
         display: none;
     }
 
+    header {
+        grid-template-columns: 1fr auto auto 1fr;
+    }
+
     .nav-bar {
         flex-direction: row;
         background-color: transparent;
@@ -68,5 +72,11 @@
     #courses {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    #courses-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-rows: 1fr;
     }
 }

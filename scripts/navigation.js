@@ -13,3 +13,32 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    pageTitle = document.querySelector('title').innerText;
+    changeActiveNav(pageTitle);
+}, false);
+
+function changeActiveNav(activePhrase) {
+    // change active class on nav buttons
+    homeButton.classList.remove('active');
+    chamButton.classList.remove('active');
+    gitButton.classList.remove('active');
+    linkButton.classList.remove('active');
+
+    switch (activePhrase) {
+        case "WDD231 Home Page":
+            homeButton.classList.add('active');
+            break;
+        case "Chamber of Commerce":
+            chamButton.classList.add('active');
+            break;
+        case "git":
+            gitButton.classList.add('active');
+            break;
+        case "link":
+            linkButton.classList.add('active');
+            break;
+        default:
+    }
+}
