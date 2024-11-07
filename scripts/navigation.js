@@ -15,7 +15,8 @@ hamButton.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    changeActiveNav("home");
+    pageTitle = document.querySelector('title').innerText;
+    changeActiveNav(pageTitle);
 }, false);
 
 function changeActiveNav(activePhrase) {
@@ -26,10 +27,10 @@ function changeActiveNav(activePhrase) {
     linkButton.classList.remove('active');
 
     switch (activePhrase) {
-        case "home":
+        case "WDD231 Home Page":
             homeButton.classList.add('active');
             break;
-        case "cham":
+        case "Chamber of Commerce":
             chamButton.classList.add('active');
             break;
         case "git":
