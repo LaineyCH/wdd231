@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="WDD 231 - Elaine Henson - Week 1 Course Home Page">
+    <meta name="author" content="Elaine Henson">
+    <title>WDD231 Home Page</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- SCRIPTS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Young+Serif&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="headerimg" src="images/profile.webp" alt="Photo of Elaine">
+        <h1 id="headertitle">Elaine Henson</h1>
+        <!--button for hamburger menu, to be visible only on mobile view-->
+        <button id="menu" aria-label="menu"></button>
+        <!--navigation-->
+        <nav class="nav-bar">
+            <a id="home-button" class="active" href="index.html">Home</a>
+            <a id="cham-button" href="#" title="Chamber of Commerce - coming soon">Chamber</a>
+            <a id="git-button" href="https://github.com/LaineyCH/wdd231" target="_blank">GitHub Profile</a>
+            <a id="link-button" href="https://www.linkedin.com/in/elaine-henson" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main id="main-cards">
+        <!--Couserwork Card-->
+        <section class="card" id="coursework-card">
+            <h2>Course Work</h2>
+            <div id="coursework">
+                <ul id="work-list">
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Place Card-->
+        <section class="card" id="place-card">
+            <h2>Abu Dhabi, UAE</h2>
+            <img src="images/camel.webp" alt="Photo of Camel on Sand Dunes in Abu Dhabi">
+            <p>Arabian Camel in Liwa</p>
+        </section>
+
+        <!-- Certificate Card -->
+        <section class="card" id="certificate-card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <!--buttons-->
+            <nav id="courses-buttons">
+                <a id="all-button" class="active" href='#'>ALL</a>
+                <a id="cse-button" href='#'>CSE</a>
+                <a id="wdd-button" href='#'>WDD</a>
+            </nav>
+            <div id="courses-content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Get current year and display with copyright information-->
+        <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; <span id="camel" class="mirror">&#128042;
+        </span> &nbsp; &nbsp; Elaine Henson &nbsp; &nbsp; &#128042; &nbsp; &nbsp; Abu Dhabi</p>
+
+        <!--Get the date that the document was last modified and display-->
+        <p>This webpage was last modified on <span id="lastmodified"></span></p>
+    </footer>
+</body>
+
+</html>

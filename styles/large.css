@@ -1,0 +1,72 @@
+/* Formatting for large view ports above 768px wide */
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        background-color: transparent;
+        max-height: 80px;
+    }
+
+    .nav-bar a {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 1.5rem;
+    }
+
+    .active::before {
+        padding-right: 0.5rem;
+        font-size: small;
+    }
+
+    .active::after {
+        padding-left: 0.5rem;
+        font-size: small;
+    }
+
+    #top-section {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    #coursework-card {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #place-card {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #certificate-card {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
