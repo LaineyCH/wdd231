@@ -39,7 +39,7 @@ header {
 #header-img {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    max-height: 100px;
+    max-width: 100px;
     margin-left: auto;
     padding: 1rem;
 }
