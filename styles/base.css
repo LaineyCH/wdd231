@@ -156,10 +156,6 @@ main {
     flex-direction: column;
 }
 
-#certificate-card h2 {
-    grid-column: 1 / 4;
-}
-
 #courses-buttons {
     display: flex;
     justify-content: center;
