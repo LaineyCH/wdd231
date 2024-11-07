@@ -152,8 +152,8 @@ main {
 }
 
 #certificate-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 #certificate-card h2 {
@@ -161,21 +161,40 @@ main {
 }
 
 #courses-buttons {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#courses-buttons a {
+button {
     padding: 1rem;
     background-color: var(--dark-green);
     color: white;
     font-family: var(--font-page), sans-serif;
     font-weight: 500;
-    text-decoration: none;
     text-align: center;
-    z-index: 2;
-    margin-right: 0;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 25%;
+}
+
+button:hover {
+    background-color: var(--sand-color);
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.completed-true {
+    background-color: var(--sun-color);
+}
+
+.completed-false {
+    background-color: var(--light-green);
+}
+
+.course-div {
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 /* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
@@ -183,7 +202,7 @@ main {
     display: block;
 }
 
-nav a:hover, #courses-buttons a:hover {
+nav a:hover {
     background-color: var(--sand-color);
     color: black;
     font-weight: 700;

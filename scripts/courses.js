@@ -14,7 +14,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -27,7 +27,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -39,7 +39,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -51,7 +51,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -65,7 +65,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -85,24 +85,47 @@ const courses = [
 
 let filteredCourses = [];
 
+// generate courses on loading of page
+document.addEventListener('DOMContentLoaded', function () {
+    generate_courses("all");
+}, false);
+
+// generate courses based on selected filter
 function generate_courses(filterPhrase) {
     switch (filterPhrase) {
         case "all":
             filteredCourses = courses;
             break;
         case "cse":
-            filteredCourses = courses.filter(course => {course.subject === 'CSE';});
+            filteredCourses = courses.filter((course) => course.subject === 'CSE');
             break;
         case "wdd":
-            filteredCourses = courses.filter(course => {course.subject === 'WDD';});
+            filteredCourses = courses.filter((course) => course.subject === 'WDD');
             break;
         default:
     }
+    // mark the selected button as visually active
     changeActiveButton(filterPhrase);
+    // display the selected courses
     const htmlCourses = filteredCourses.map(
-        (course) => `<div>${course.subject} ${course.number}</div>`
+        (course) =>
+            `<div class="course-div completed-${course.completed}">${course.subject} ${course.number}</div>`
     );
+    // send the selected courses to the html div
     document.getElementById("courses-content").innerHTML = htmlCourses.join('');
+    // get the total number of credits as well as incomplete credits and send to html div
+    const {totalCredits, incompleteCredits} = filteredCourses.reduce(
+        (acc, course) => {
+            acc.totalCredits += course.credits; // Accumulate total credits (acc is an accumulator)
+            if (!course.completed) {
+                acc.incompleteCredits += course.credits; // Accumulate incomplete credits
+            }
+            return acc;
+        },
+        {totalCredits: 0, incompleteCredits: 0} // Initial values
+    );
+    document.getElementById("credits-required").innerHTML =
+        `Credits Required: ${incompleteCredits} / ${totalCredits}`;
 }
 
 function changeActiveButton(activePhrase) {
@@ -127,11 +150,11 @@ function changeActiveButton(activePhrase) {
 
 // create event listeners for course selection
 allButton.addEventListener('click', () => {
-    generate_courses("home");
+    generate_courses("all");
 });
 cseButton.addEventListener('click', () => {
-    generate_courses("old");
+    generate_courses("cse");
 });
 wddButton.addEventListener('click', () => {
-    generate_courses("new");
+    generate_courses("wdd");
 });
