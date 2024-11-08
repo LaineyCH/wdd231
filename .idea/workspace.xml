@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="correct meta and nav hover">
-      <change beforePath="$PROJECT_DIR$/chamber.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber.html" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="correct meta and img details">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730981293652</updated>
       <workItem from="1730981294814" duration="1792000" />
-      <workItem from="1730997074714" duration="7945000" />
+      <workItem from="1730997074714" duration="8581000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -93,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731046299745</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="correct meta and img details">
+      <option name="closed" value="true" />
+      <created>1731046718106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731046718106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adjust CSS and JS" />
     <MESSAGE value="correct meta and nav hover" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct meta and nav hover" />
+    <MESSAGE value="correct meta and img details" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct meta and img details" />
   </component>
 </project>

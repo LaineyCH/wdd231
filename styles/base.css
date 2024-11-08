@@ -39,6 +39,7 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     max-width: 100px;
+    height: auto;
     margin-left: auto;
     padding: 1rem;
     border-radius: 25px;
@@ -149,6 +150,7 @@ main {
 
 #place-card img {
     max-width: 80%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1rem;
