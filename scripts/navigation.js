@@ -2,10 +2,10 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
 // select menu buttons
-const homeButton = document.querySelector('#home-button');
-const chamButton = document.querySelector('#cham-button');
-const gitButton = document.querySelector('#git-button');
-const linkButton = document.querySelector('#link-button');
+const homeButton = document.querySelector('a[href*="index"]');
+const chamButton = document.querySelector('a[href*="chamber"]');
+const gitButton = document.querySelector('a[href*="github"]');
+const linkButton = document.querySelector('a[href*="linkedin"]');
 
 //create event listener for the hamburger menu button
 //toggle the open class on/off for the nav menu and button, when the button is clicked

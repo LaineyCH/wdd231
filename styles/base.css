@@ -79,6 +79,7 @@ h1 {
     grid-row: 2 / 3;
     font-weight: 500;
     font-size: large;
+    border-bottom: 3px solid var(--sun-color);
 }
 
 .nav-bar a {
@@ -91,7 +92,7 @@ h1 {
     text-align: center;
     z-index: 2;
     margin-right: 0;
-    border-bottom: 3px solid var(--sun-color);
+
 }
 
 .nav-bar a {
@@ -103,11 +104,6 @@ h1 {
 nav a:link {
     text-decoration: none;
     color: white;
-}
-
-nav a:visited {
-    text-decoration: none;
-    color: var(--sand-color);
 }
 
 /* Main Section */
@@ -234,12 +230,12 @@ nav a:hover {
 
 /* classes toggled in JS */
 .active::before {
-    content: "*";
+    content: "<";
     padding-right: 1rem;
 }
-
-.active a {
-    background-color: pink;
+.active::after {
+    content: ">";
+    padding-left: 1rem;
 }
 
 .selected {
