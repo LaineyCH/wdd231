@@ -1,0 +1,45 @@
+Index: styles/base.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>:root {\n    /* fonts */\n    --font-heading: \"Young Serif\", serif;\n    --font-page: \"Poppins\", sans-serif;\n    --font-text: Georgia, 'Times New Roman', Times, serif;\n    /* colors */\n    --sand-color: rgb(239, 208, 150);\n    --sun-color: rgb(241, 154, 66);\n    --transl-white: rgb(255, 255, 255, 0.5);\n    --background: rgb(222, 222, 222);\n    --dark-green: #02514e;\n    --light-green: #76D7C4;\n}\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\nbody {\n    background-color: var(--background);\n    font-family: var(--font-page), sans-serif;\n}\n\n/* Header - includes Nav Bar */\n\nheader {\n    grid-row: 1 / 2;\n    display: grid;\n    grid-template-columns: 1fr auto auto 1fr;\n    grid-template-rows: auto auto ;\n    background-color: var(--light-green);\n    width: 100%;\n}\n\n#headerimg {\n    grid-column: 2 / 3;\n    grid-row: 1 / 2;\n    max-height: 100px;\n    margin-left: auto;\n    padding: 1rem;\n}\n\n#headertitle {\n    grid-column: 3 / 4;\n    grid-row: 1 / 2;\n    padding: 1rem;\n    color: black;\n    margin-right: auto;\n}\n\nh1, h2 {\n    text-align: center;\n    font-family: var(--font-heading), serif;\n}\n\nh1 {\n    font-weight: 700;\n}\n\n\n.nav-bar {\n    display: flex;\n    flex-direction: column;\n    grid-column: 1 / 5;\n    grid-row: 2 / 3;\n    background-color: var(--dark-green);\n    text-align: justify;\n    font-family: var(--font-page), sans-serif;\n    font-weight: 500;\n    font-size: large;\n}\n\n.nav-bar a {\n    display: none;\n    padding: 1rem;\n    background-color: var(--dark-green);\n    color: white;\n    font-family: var(--font-page), sans-serif;\n    font-weight: 500;\n    text-decoration: none;\n    text-align: center;\n    z-index: 2;\n    margin-right: 0;\n}\n\n.nav-bar a {\n    float: left;\n    padding-top: 0.8rem;\n    text-align: center;\n}\n\nnav a:link {\n    text-decoration: none;\n    color: white;\n}\n\nnav a:visited {\n    text-decoration: none;\n    color: var(--sun-color);\n}\n\n/* Main Section */\nmain {\n    display: flex;\n    flex-direction: column;\n    background-color: rgb(222, 222, 222);\n    font-family: var(--font-text), serif;\n    width: 100%;\n}\n\n.card {\n    background-color: white;\n    border-radius: 10px;\n    border: black 1px solid;\n    margin-top: 1rem;\n    margin-left: 1rem;\n    margin-right: 1rem;\n}\n\n.card h2 {\n    text-align: center;\n    background-color: var(--light-green);\n    padding: 1rem;\n    margin: 0;\n    border-top-left-radius: 10px;\n    border-top-right-radius: 10px;\n}\n\n#coursework-card ul {\n    padding-left: 1rem;\n    padding-top: 1rem;\n    margin: 0;\n    list-style-position: inside;\n}\n\n#place-card {\n    display: flex;\n    flex-direction: column;\n}\n\n#place-card img {\n    max-width: 80%;\n    margin-left: auto;\n    margin-right: auto;\n    padding-top: 1rem;\n}\n\n#place-card p {\n    text-align: center;\n}\n\n#certificate-card {\n    display: flex;\n    flex-direction: column;\n}\n\n#certificate-card h2 {\n    grid-column: 1 / 4;\n}\n\n#courses-buttons {\n    display: flex;\n    justify-content: center;\n}\n\nbutton {\n    padding: 1rem;\n    background-color: var(--dark-green);\n    color: white;\n    font-family: var(--font-page), sans-serif;\n    font-weight: 500;\n    text-align: center;\n    margin: 1rem;\n    border-radius: 10px;\n    width: 25%;\n}\n\nbutton:hover {\n    background-color: var(--sand-color);\n    color: black;\n    font-weight: 700;\n    border-radius: 10px;\n}\n\n.completed-true {\n    background-color: var(--sun-color);\n}\n\n.completed-false {\n    background-color: var(--light-green);\n}\n\n.course-div {\n    padding: 1rem;\n    border-radius: 10px;\n}\n\n/* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */\n.open a {\n    display: block;\n}\n\nnav a:hover {\n    background-color: var(--sand-color);\n    color: black;\n    font-weight: 700;\n    border-radius: 10px;\n}\n\n/* bolds the text of active item */\n.active::before {\n    content: \"*\";\n    padding-right: 1rem;\n}\n\n#menu {\n    font-size: 1.5rem;\n    border: 0;\n    background: none;\n    color: white;\n    position: absolute;\n    top: 10px;\n    right: 15px;\n}\n\n/* appearance for the button when open class os off */\n#menu::before {\n    content: \"☰\";\n    font-size: 40px;\n}\n\n/* appearance for the button when open class os on */\n#menu.open::before {\n    content: \"x\";\n}\n\n/* Footer */\nfooter {\n    grid-row: 3 / 4;\n    padding: 1rem 1rem 6rem 1rem;\n    margin-top: 1rem;\n    text-align: center;\n    background-color: var(--dark-green);\n    color: white;\n}\n\n#camel {\n    display: Inline-block;\n}\n\n.mirror {\n    transform: scale(-1, 1);\n    -webkit-transform: scale(-1, 1);\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/styles/base.css b/styles/base.css
+--- a/styles/base.css	(revision 4bef97dbb82e7abc607716782428fc72d3cd7683)
++++ b/styles/base.css	(date 1730997703083)
+@@ -197,7 +197,7 @@
+     border-radius: 10px;
+ }
+ 
+-/* this class is not present in the HTML code - it is added/removed by the JS when the hamburger menu button is clicked */
++/* class toggled in JS */
+ .open a {
+     display: block;
+ }
+@@ -209,7 +209,7 @@
+     border-radius: 10px;
+ }
+ 
+-/* bolds the text of active item */
++/* class toggled in JS */
+ .active::before {
+     content: "*";
+     padding-right: 1rem;
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1730997703087)
++++ b/.idea/vcs.xml	(date 1730997703087)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file

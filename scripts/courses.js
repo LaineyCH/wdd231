@@ -105,7 +105,7 @@ function generate_courses(filterPhrase) {
         default:
     }
     // mark the selected button as visually active
-    changeActiveButton(filterPhrase);
+    changeSelectedButton(filterPhrase);
     // display the selected courses
     const htmlCourses = filteredCourses.map(
         (course) =>
@@ -128,21 +128,21 @@ function generate_courses(filterPhrase) {
         `<h3>Credits Required: ${incompleteCredits} / ${totalCredits}</h3>`;
 }
 
-function changeActiveButton(activePhrase) {
+function changeSelectedButton(selectedPhrase) {
     // change active class on course buttons
-    allButton.classList.remove('active');
-    cseButton.classList.remove('active');
-    wddButton.classList.remove('active');
+    allButton.classList.remove('selected');
+    cseButton.classList.remove('selected');
+    wddButton.classList.remove('selected');
 
-    switch (activePhrase) {
+    switch (selectedPhrase) {
         case "all":
-            allButton.classList.add('active');
+            allButton.classList.add('selected');
             break;
         case "cse":
-            cseButton.classList.add('active');
+            cseButton.classList.add('selected');
             break;
         case "wdd":
-            wddButton.classList.add('active');
+            wddButton.classList.add('selected');
             break;
         default:
     }

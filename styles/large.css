@@ -28,11 +28,6 @@
         font-size: small;
     }
 
-    .active::after {
-        padding-left: 0.5rem;
-        font-size: small;
-    }
-
     #top-section {
         display: grid;
         grid-template-columns: 3fr 2fr;
