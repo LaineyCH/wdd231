@@ -92,13 +92,7 @@ h1 {
     text-align: center;
     z-index: 2;
     margin-right: 0;
-
-}
-
-.nav-bar a {
-    float: left;
-    padding-top: 0.8rem;
-    text-align: center;
+    cursor: pointer;
 }
 
 nav a:link {

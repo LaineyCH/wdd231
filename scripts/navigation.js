@@ -1,6 +1,6 @@
 //select HTML elements and assign to constants
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('nav');
+const navigation = document.querySelector('.nav-bar');
 // select menu buttons
 const homeButton = document.querySelector('a[href*="index"]');
 const chamButton = document.querySelector('a[href*="chamber"]');
