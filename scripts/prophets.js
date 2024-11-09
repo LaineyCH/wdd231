@@ -53,6 +53,8 @@ const displayProphets = (filterPhrase) => {
         const card = document.createElement('section');
         const fullName = document.createElement('h2');
         const portrait = document.createElement('img');
+        const birthdate = document.createElement('p');
+        const birthplace = document.createElement('p');
 
         // determin prophet order suffix "st", "nd", "rd" or "th"
         let suffix = "th"
@@ -68,6 +70,8 @@ const displayProphets = (filterPhrase) => {
 
         // add content and attributes
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthdate.textContent = `Date of birth: ${prophet.birthdate}`;
+        birthplace.textContent = `Place of birth: ${prophet.birthplace}`
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${suffix} President of the Church`);
         portrait.setAttribute('loading', 'lazy');
@@ -76,7 +80,14 @@ const displayProphets = (filterPhrase) => {
 
         // add name and img to card
         card.appendChild(fullName);
+        card.appendChild(birthdate);
+        card.appendChild(birthplace);
         card.appendChild(portrait);
+
+        // check if current president
+        if (prophet.death === null) {
+            card.classList.add('current');
+        }
 
         // add card to cards element in html
         cards.appendChild(card);
@@ -137,7 +148,12 @@ servedButton.addEventListener('click', () => {
 function getAge(birthdate, deathdate) {
     // Parse the birthdate and death date strings into Date objects
     const birth = new Date(birthdate);
-    const death = new Date(deathdate);
+    let death;
+    if (deathdate === null) {
+        death = new Date();
+    } else {
+        death = new Date(deathdate);
+    }
     // Calculate the difference in years
     let age = death.getFullYear() - birth.getFullYear();
     // Adjust if the birthdate has not yet occurred in the death year
