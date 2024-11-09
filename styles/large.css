@@ -13,6 +13,7 @@
         flex-direction: row;
         background-color: transparent;
         max-height: 80px;
+        opacity: 1;
     }
 
     .nav-bar a {
