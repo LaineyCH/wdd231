@@ -1,0 +1,107 @@
+[
+  {
+    "companyname" : "Sweet Life Bakery",
+    "ownername" : "Lindie Moag",
+    "address" : {
+      "number" : "45",
+      "street" : "Clements Ave",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+      },
+    "phone" : "+971 54 555 7654",
+    "url" : "www.SweetLifeBakery.com",
+    "img" : "slbakery.webp",
+    "membership": 2,
+    "category" : "food services"
+  },
+  {
+    "companyname" : "Ash's Attic",
+    "ownername" : "Ashley Shane",
+    "address" : {
+      "number" : "42",
+      "street" : "Manarat Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 56 555 2346",
+    "url" : "www.AshAttic.com",
+    "img" : "ash-attic.webp",
+    "membership": 2,
+    "category" : "art craft"
+  },
+  {
+    "companyname" : "Nick Knacks",
+    "ownername" : "Nicholas Hope",
+    "address" : {
+      "number" : "8",
+      "street" : "Donar Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 54 555 5432",
+    "url" : "www.nickknacks.com",
+    "img" : "nickknacks.webp",
+    "membership": 1,
+    "category" : "charity"
+  },
+  {
+    "companyname" : "Corner Market",
+    "ownername" : "Peter Corner",
+    "address" : {
+      "number" : "2",
+      "street" : "Al Oud Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 56 555 8293",
+    "url" : "www.corner-market.com",
+    "img" : "cornerm.webp",
+    "membership": 3,
+    "category" : "groceries"
+  },
+  {
+    "companyname" : "Oasis Spa",
+    "ownername" : "Angie Howard",
+    "address" : {
+      "number" : "76",
+      "street" : "Al Meera Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 54 555 9383",
+    "url" : "www.OasisSpa.com",
+    "img" : "oasis.webp",
+    "membership": 2,
+    "category" : "health wellbeing"
+  },
+  {
+    "companyname" : "Elaison cc",
+    "ownername" : "Cassie Currie",
+    "address" : {
+      "number" : "32",
+      "street" : "Al Sheer Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 56 555 7832",
+    "url" : "www.elaison.com",
+    "img" : "elaison.webp",
+    "membership": 3,
+    "category" : "manufacturing"
+  },
+  {
+    "companyname" : "Atium Technologies",
+    "ownername" : "Jon Vendla",
+    "address" : {
+      "number" : "509",
+      "street" : "Al Sabar Street",
+      "area" : "Al Reem Island",
+      "city" : "Abu Dhabi"
+    },
+    "phone" : "+971 54 555 7625",
+    "url" : "www.AtiumTech.com",
+    "img" : "atium.webp",
+    "membership": 3,
+    "category" : "technology"
+  }
+]

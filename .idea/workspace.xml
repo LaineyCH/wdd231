@@ -4,9 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add social media meta tags">
-      <change afterPath="$PROJECT_DIR$/new-members.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="center buttons">
+      <change afterPath="$PROJECT_DIR$/chamber/data/members.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/directory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/discover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/arcoc-logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/ash-attic.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/atium.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/cornerm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/elaison.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/fb-icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/in-icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/nickknacks.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/oasis.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/slbakery.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/images/x-icon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/scripts/chamber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/scripts/directory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/scripts/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/styles/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +45,12 @@
     &quot;assignee&quot;: &quot;LaineyCH&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/LaineyCH/wdd231.git&quot;,
-    &quot;accountId&quot;: &quot;675d845b-12a1-4d04-ad9a-e040e04785fd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LaineyCH/wdd231.git",
+    "accountId": "cb56dfc1-fd4c-4bb2-b760-42977c8be732"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -41,33 +62,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "JavaScript Debug.index.html.executor": "Run",
-    "Node.js.courses.js.executor": "Run",
-    "Node.js.test.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ehenson/WebstormProjects/wdd231/scripts/test.js",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Settings.JavaScript",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JavaScript Debug.directory.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.prophets.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.courses.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.test.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ehenson/WebstormProjects/wdd231/chamber/styles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.JavaScript&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chamber/styles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chamber/images" />
+      <recent name="$PROJECT_DIR$/chamber" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.courses.js">
     <configuration name="courses.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="courses.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
@@ -92,6 +120,7 @@
       <updated>1730981293652</updated>
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
+      <workItem from="1731312084834" duration="17051000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -149,7 +178,55 @@
       <option name="project" value="LOCAL" />
       <updated>1731079722517</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add prophets site">
+      <option name="closed" value="true" />
+      <created>1731093671384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731093671384</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update prophets site">
+      <option name="closed" value="true" />
+      <created>1731131877248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731131877248</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add social meta data">
+      <option name="closed" value="true" />
+      <created>1731132251438</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731132251438</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add cursor pointer">
+      <option name="closed" value="true" />
+      <created>1731157305566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731157305566</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add nav bar animation">
+      <option name="closed" value="true" />
+      <created>1731158430952</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731158430952</updated>
+    </task>
+    <task id="LOCAL-00013" summary="center buttons">
+      <option name="closed" value="true" />
+      <created>1731159910858</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731159910858</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +276,12 @@
     <MESSAGE value="correct wayfinding" />
     <MESSAGE value="add favicon" />
     <MESSAGE value="add social media meta tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="add social media meta tags" />
+    <MESSAGE value="add prophets site" />
+    <MESSAGE value="update prophets site" />
+    <MESSAGE value="add social meta data" />
+    <MESSAGE value="add cursor pointer" />
+    <MESSAGE value="add nav bar animation" />
+    <MESSAGE value="center buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="center buttons" />
   </component>
 </project>
