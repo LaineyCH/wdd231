@@ -29,7 +29,7 @@ getMemberData();
 function displayMemberCards() {
     cards.innerHTML = '';
     table.innerHTML = '';
-    members.forEach((member) => {
+    members.forEach((member, index) => {
         // create html elements
         const card = document.createElement('section');
         const companyName = document.createElement('h2');
@@ -42,7 +42,10 @@ function displayMemberCards() {
         card.setAttribute('class', 'card');
         image.setAttribute('src', `./images/${member.img}`);
         image.setAttribute('alt', `${member.companyname} Business Logo`);
-        image.setAttribute('loading', 'lazy');
+        // Only add lazy loading for images after the first one
+        if (index !== 0) {
+            image.setAttribute('loading', 'lazy');
+        }
         image.setAttribute('width', '500');
         image.setAttribute('height', '500');
 

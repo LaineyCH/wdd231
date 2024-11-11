@@ -70,7 +70,7 @@
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.courses.js">
+  <component name="RunManager">
     <configuration name="courses.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="courses.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
@@ -95,7 +95,7 @@
       <updated>1730981293652</updated>
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
-      <workItem from="1731312084834" duration="27762000" />
+      <workItem from="1731312084834" duration="28181000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -233,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731342213423</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add table view and adjust styling">
+      <option name="closed" value="true" />
+      <created>1731342416775</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731342416775</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
