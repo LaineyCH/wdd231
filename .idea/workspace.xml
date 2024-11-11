@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="center buttons">
-      <change afterPath="$PROJECT_DIR$/chamber/data/members.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/directory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/discover.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/arcoc-logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/ash-attic.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/atium.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/cornerm.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/elaison.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/fb-icon.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/in-icon.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/nickknacks.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/oasis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/slbakery.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/x-icon.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/chamber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/directory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/styles/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="change file name">
+      <change beforePath="$PROJECT_DIR$/chamber/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/directory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/discover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +100,7 @@
       <updated>1730981293652</updated>
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
-      <workItem from="1731312084834" duration="17051000" />
+      <workItem from="1731312084834" duration="17499000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -226,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731159910858</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add chamber of commerce project">
+      <option name="closed" value="true" />
+      <created>1731331712776</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731331712776</updated>
+    </task>
+    <task id="LOCAL-00015" summary="change file name">
+      <option name="closed" value="true" />
+      <created>1731331886907</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731331886907</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +278,8 @@
     <MESSAGE value="add cursor pointer" />
     <MESSAGE value="add nav bar animation" />
     <MESSAGE value="center buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="center buttons" />
+    <MESSAGE value="add chamber of commerce project" />
+    <MESSAGE value="change file name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change file name" />
   </component>
 </project>
