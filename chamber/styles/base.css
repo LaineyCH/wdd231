@@ -5,8 +5,9 @@
     --font-text: Georgia, 'Times New Roman', Times, serif;
     /* colors */
     --background: white;
-    --sun: #ee9232;
+    --sun: #e4a51f;
     --sand: rgb(253, 233, 192);
+    --light-aqua: #def8fd;
     --aqua: #b6ebf4;
     --light-green: #76D7C4;
     --teal: #027c91;
@@ -156,7 +157,7 @@ h3 {
 }
 
 nav a:hover {
-    background-color: var(--sand-color);
+    background-color: var(--light-aqua);
     color: black;
     font-weight: 700;
 }
@@ -188,7 +189,18 @@ main {
     width: 100%;
 }
 
+#page-title {
+    padding: 1rem;
+}
+
 /* ---------------------------------------------- BUSINESS CARDS ----------------------------------------- */
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -196,6 +208,7 @@ main {
     border-radius: 10px;
     border: black 1px solid;
     margin: 1rem;
+    max-width: 400px;
 }
 
 .card h2 {
@@ -216,9 +229,8 @@ main {
 .card img {
     max-width: 80%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card p {
@@ -226,19 +238,53 @@ main {
     padding: 1rem;
 }
 
-/* ------------------------------------------- BUSINESS LIST ------------------------------------------- */
+/* ------------------------------------------- BUSINESS TABLE ------------------------------------------- */
+#table-view {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    padding: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Style for odd rows */
+tr:nth-child(odd) {
+    background-color: var(--light-aqua);
+}
+
+td, th {
+    padding: 1rem;
+}
+
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+}
 
 /* ------------------------------------- DIRECTORY SELECTION BUTTONS ------------------------------------ */
+
+#directory-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     padding: 1rem;
-    background-color: var(--dark-green);
+    background-color: var(--sun);
     color: white;
-    font-family: var(--font-page), sans-serif;
-    font-weight: 500;
-    text-align: center;
     margin: 1rem;
     border-radius: 10px;
-    width: 25%;
+    width: auto;
 }
 
 button:hover {
@@ -246,6 +292,11 @@ button:hover {
     color: black;
     font-weight: 700;
     border-radius: 10px;
+}
+
+.button-symbol {
+    width: 50px;
+    height: auto;
 }
 
 

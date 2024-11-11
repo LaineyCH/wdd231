@@ -49,6 +49,23 @@
     #cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        align-items: stretch;
+    }
+
+    .cars {
+        margin: 0;
+    }
+
+    #table-view {
+        display: table;
+    }
+
+    tr {
+        display: table-row;
+    }
+
+    td {
+        display: table-cell;
     }
 
     .active::before {
