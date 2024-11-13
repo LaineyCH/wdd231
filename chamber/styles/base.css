@@ -273,6 +273,11 @@ td {
     justify-content: center;
 }
 
+/* Hide cards or table depending on view selected (.hice class added in JS */
+#table-view.hide, #cards.hide {
+    display: none !important;
+}
+
 /* ------------------------------------- DIRECTORY SELECTION BUTTONS ------------------------------------ */
 
 #directory-view {
@@ -380,4 +385,5 @@ footer {
     #heading {
         line-height: 35px;
     }
+
 }

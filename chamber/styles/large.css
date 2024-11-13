@@ -52,10 +52,6 @@
         align-items: stretch;
     }
 
-    .cars {
-        margin: 0;
-    }
-
     #table-view {
         display: table;
     }
@@ -66,6 +62,11 @@
 
     td {
         display: table-cell;
+    }
+
+    /* Hide cards or table depending on view selected (.hice class added in JS */
+    #table-view.hide, #cards.hide {
+        display: none !important;
     }
 
     .active::before {

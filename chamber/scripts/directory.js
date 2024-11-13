@@ -27,8 +27,9 @@ async function getMemberData() {
 getMemberData();
 
 function displayMemberCards() {
+    table.classList.add('hide');
+    cards.classList.remove('hide');
     cards.innerHTML = '';
-    table.innerHTML = '';
     members.forEach((member, index) => {
         // create html elements
         const card = document.createElement('section');
@@ -77,7 +78,8 @@ function displayMemberCards() {
 }
 
 function displayMemberTable() {
-    cards.innerHTML = '';
+    cards.classList.add('hide');
+    table.classList.remove('hide');
     table.innerHTML = '';
     members.forEach(member => {
         const tableRow = document.createElement('tr');
