@@ -81,6 +81,24 @@ function displayMemberTable() {
     cards.classList.add('hide');
     table.classList.remove('hide');
     table.innerHTML = '';
+    const tableHeaderRow = document.createElement('tr');
+    const tableHeader1 = document.createElement('th');
+    const tableHeader2 = document.createElement('th');
+    const tableHeader3 = document.createElement('th');
+    const tableHeader4 = document.createElement('th');
+    const tableHeader5 = document.createElement('th');
+    tableHeader1.textContent = 'Company Name';
+    tableHeader2.textContent = 'Contact Name';
+    tableHeader3.textContent = 'Address';
+    tableHeader4.textContent = 'Phone Number';
+    tableHeader5.textContent = 'Website';
+    tableHeaderRow.appendChild(tableHeader1);
+    tableHeaderRow.appendChild(tableHeader2);
+    tableHeaderRow.appendChild(tableHeader3);
+    tableHeaderRow.appendChild(tableHeader4);
+    tableHeaderRow.appendChild(tableHeader5);
+    tableHeaderRow.classList.add('visually-hidden');
+    table.appendChild(tableHeaderRow);
     members.forEach(member => {
         const tableRow = document.createElement('tr');
         const companyTd = document.createElement('td');

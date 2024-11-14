@@ -60,8 +60,14 @@
         display: table-row;
     }
 
-    td {
+    th, td {
         display: table-cell;
+        text-align: left;
+    }
+
+    th {
+        background-color: var(--teal);
+        color: white;
     }
 
     /* Hide cards or table depending on view selected (.hice class added in JS */

@@ -256,11 +256,11 @@ tr:nth-child(even) {
 }
 
 /* Style for odd rows */
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: var(--light-aqua);
 }
 
-td, th {
+th, td {
     padding: 1rem;
 }
 
@@ -271,6 +271,18 @@ table, thead, tbody, th, td, tr {
 td {
     display: flex;
     justify-content: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* Hide cards or table depending on view selected (.hice class added in JS */

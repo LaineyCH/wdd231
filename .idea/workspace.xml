@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="toggle hide class for cards/table" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="toggle hide class for cards/table">
+      <change afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/scripts/directory.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/directory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +27,12 @@
     &quot;assignee&quot;: &quot;LaineyCH&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LaineyCH/wdd231.git",
-    "accountId": "cb56dfc1-fd4c-4bb2-b760-42977c8be732"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LaineyCH/wdd231.git&quot;,
+    &quot;accountId&quot;: &quot;cb56dfc1-fd4c-4bb2-b760-42977c8be732&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -44,6 +51,7 @@
     "JavaScript Debug.discover.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.prophets.html.executor": "Run",
+    "JavaScript Debug.template.html.executor": "Run",
     "Node.js.courses.js.executor": "Run",
     "Node.js.test.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
