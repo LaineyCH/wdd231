@@ -23,6 +23,7 @@
     <!-- SCRIPTS -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/courses.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,9 +53,9 @@
             <h2>Course Work</h2>
             <div id="coursework">
                 <ul id="work-list">
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
+                    <li>Prophets Page</li>
+                    <li>Chamber of Commerce Directory Page</li>
+                    <li>Weather Card</li>
                 </ul>
             </div>
         </section>
@@ -64,6 +65,47 @@
             <h2>Abu Dhabi, UAE</h2>
             <img src="images/camel.webp" alt="Photo of Camel on Sand Dunes in Abu Dhabi" width="500" height="375">
             <p>Arabian Camel in Liwa</p>
+        </section>
+
+        <!-- Weather Card -->
+        <section class="card" id="weather-card">
+            <h2>Weather in Abu Dhabi</h2>
+            <div id="conditions">
+                <figure id="weather-main">
+                    <img id="weather-icon" src="" alt="">
+                    <span class="bold" id="current-temp"></span>
+                    <figcaption></figcaption>
+                </figure>
+                <table id="conditions-table">
+                    <tr>
+                        <th>Condition</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td><span id="current-humid"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td><span id="wind-speed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Pressure</td>
+                        <td><span id="pressure"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Visibility</td>
+                        <td><span id="visibility"></span></td>
+                    </tr>
+                </table>
+                <!--
+                <div id="conditions-list">
+                    <p>Humidity: <span id="current-humid"></span></p>
+                    <p>Wind Speed: <span id="wind-speed"></span></p>
+                    <p>Pressure: <span id="pressure"></span></p>
+                    <p>Visibility: <span id="visibility"></span></p>
+                </div> -->
+            </div>
         </section>
 
         <!-- Certificate Card -->
@@ -78,6 +120,7 @@
             <div id="courses-content"></div>
             <div id="credits-required"></div>
         </section>
+
     </main>
 
     <footer>

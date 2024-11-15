@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="toggle hide class for cards/table">
-      <change afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/weather.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/course.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/scripts/directory.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/directory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/large.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -50,8 +53,9 @@
     "JavaScript Debug.directory.html.executor": "Run",
     "JavaScript Debug.discover.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.modules.html.executor": "Run",
     "JavaScript Debug.prophets.html.executor": "Run",
-    "JavaScript Debug.template.html.executor": "Run",
+    "JavaScript Debug.weather.html.executor": "Run",
     "Node.js.courses.js.executor": "Run",
     "Node.js.test.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
