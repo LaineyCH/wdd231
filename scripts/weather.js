@@ -43,29 +43,10 @@ function displayResults() {
     figCaption.innerHTML = `Feels like ${feelsTemp}. ${capDescr}. ${windDesc}`;
 
     currentHumid.innerHTML = `${data.main.humidity}%`;
-    wind.innerHTML = `${windSpeed}m/s, ${windDirection}`;
-    pressure.innerHTML = `${data.main.pressure}hPa`;
-    visibility.innerHTML = `${data.visibility}m`
+    wind.innerHTML = `${windSpeed}m/s ${windDirection}`;
+    pressure.innerHTML = `${data.main.pressure} hPa`;
+    visibility.innerHTML = `${data.visibility} m`
 }
-
-/*
-<p>Humidity: <span id="current-humid"></span></p>
-<p>Wind Speed: <span id="wind-speed"></span></p>
-<p>Pressure: <span id="pressure"></span></p>
-<p>Visibility: <span id="visibility"></span></p>
-4.1
-m / s
-NW
-1013
-hPa
-Humidity:
-    62 %
-    Dew
-point:
-    22°C
-Visibility:
-    10.0
-km */
 
 function capitalize(words) {
     return words.split(' ').map(word => {

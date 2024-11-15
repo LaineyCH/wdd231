@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="toggle hide class for cards/table">
-      <change afterPath="$PROJECT_DIR$/modules.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/weather.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/course.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather.html" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add weather card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/large.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731519475177</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add weather card">
+      <option name="closed" value="true" />
+      <created>1731664994028</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731664994028</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +372,7 @@
     <MESSAGE value="fix image path" />
     <MESSAGE value="make image path absolute" />
     <MESSAGE value="toggle hide class for cards/table" />
-    <option name="LAST_COMMIT_MESSAGE" value="toggle hide class for cards/table" />
+    <MESSAGE value="add weather card" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weather card" />
   </component>
 </project>
