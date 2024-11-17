@@ -46,10 +46,25 @@
         padding-top: 1.5rem;
     }
 
-    #cards {
+    #call-to-action {
+        right: 80px;
+    }
+
+    .cards-section {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         align-items: stretch;
+    }
+
+    #info-cards.cards-section {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        align-items: stretch;
+    }
+
+    #info-cards > .card {
+        max-width: 800px;
     }
 
     #table-view {
@@ -87,6 +102,12 @@
 }
 
 @media (min-width: 1211px) {
+
+    #call-to-action {
+        right: 120px;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
 
     footer {
         display: grid;

@@ -5,7 +5,8 @@
     --font-text: Georgia, 'Times New Roman', Times, serif;
     /* colors */
     --background: white;
-    --sun: #e4a51f;
+    --red: #da5502;
+    --sun: #efac23;
     --sand: rgb(253, 233, 192);
     --light-aqua: #def8fd;
     --aqua: #b6ebf4;
@@ -179,7 +180,7 @@ nav a:hover {
     font-weight: 700;
 }
 
-/* ------------------------------------------------  MAIN  ---------------------------------------------- */
+/* ----------------------------------------------------  MAIN  --------------------------------------------------- */
 
 main {
     display: flex;
@@ -193,12 +194,80 @@ main {
     padding: 1rem;
 }
 
-/* ---------------------------------------------- BUSINESS CARDS ----------------------------------------- */
+/* -----------------------------------------------  HERO IMAGE  ------------------------------------------------- */
 
-#cards {
+#hero {
+    width: 100%;
+    position: relative;
+}
+
+#hero-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+#call-to-action {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    background-color: var(--red);
+    color: white;
+    font-family: var(--font-page), sans-serif;
+    padding: 0.8rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------  LOGO REEL  ------------------------------------------------- */
+.logo-reel {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo-wrapper {
+    display: inline-block;
+    animation: scroll-back-and-forth 45s ease-in-out infinite;;
+}
+
+.logo-wrapper img {
+    width: 200px;
+    height: auto;
+    margin: 0 3rem;
+    display: inline-block;
+}
+
+/* Keyframes for back-and-forth animation */
+@keyframes scroll-back-and-forth {
+    0% {
+        transform: translateX(0); /* Start at the original position */
+    }
+    50% {
+        transform: translateX(-45%); /* Move halfway to the left */
+    }
+    100% {
+        transform: translateX(0); /* Move back to the original position */
+    }
+}
+
+/* ---------------------------------------------------- CARDS -------------------------------------------------- */
+
+.cards-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#info-cards.cards-section {
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
@@ -209,6 +278,8 @@ main {
     border: black 1px solid;
     margin: 1rem;
     max-width: 400px;
+    min-height: 300px;
+    flex: 1;
 }
 
 .card h2 {
@@ -241,7 +312,7 @@ main {
     padding: 1rem;
 }
 
-/* ------------------------------------------- BUSINESS TABLE ------------------------------------------- */
+/* --------------------------------------------------- TABLES --------------------------------------------------- */
 #table-view {
     width: 100%;
     border-collapse: collapse;
@@ -255,7 +326,7 @@ tr:nth-child(even) {
     background-color: white;
 }
 
-/* Style for odd rows */
+/* Style for even rows */
 tr:nth-child(even) {
     background-color: var(--light-aqua);
 }
@@ -285,12 +356,77 @@ td {
     border: 0;
 }
 
-/* Hide cards or table depending on view selected (.hice class added in JS */
+/* Hide cards or table depending on view selected (.hide class added in JS */
 #table-view.hide, #cards.hide {
     display: none !important;
 }
 
-/* ------------------------------------- DIRECTORY SELECTION BUTTONS ------------------------------------ */
+/* ---------------------------------------------------  WEATHER  ------------------------------------------------- */
+
+#weather-main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+#weather-icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+}
+
+#current-temp {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-family: var(--font-page), sans-serif;
+    font-size: 2rem;
+    align-self: center;
+    padding: 1rem;
+}
+
+figcaption {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-family: var(--font-page), sans-serif;
+    padding: 1rem;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conditions-table {
+    max-width: 800px;
+    padding-bottom: 1rem;
+    font-family: var(--font-page), sans-serif;
+    border-spacing: 10px;
+}
+
+.conditions-table tr, .conditions-table td {
+    background-color: var(--sand);
+    padding: 0;
+}
+
+.conditions p {
+    font-family: var(--font-page), sans-serif;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+/* --------------------------------- DIRECTORY PAGE: DIRECTORY SELECTION BUTTONS --------------------------------- */
 
 #directory-view {
     display: flex;
@@ -317,42 +453,6 @@ button:hover {
 .button-symbol {
     width: 50px;
     height: auto;
-}
-
-
-
-/* ----------------------------------------------  LOGO REEL  -------------------------------------------- */
-.logo-reel {
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.logo-wrapper {
-    display: inline-block;
-    animation: scroll-back-and-forth 45s ease-in-out infinite;;
-}
-
-.logo-wrapper img {
-    width: 100px;
-    height: auto;
-    margin: 0 3rem;
-    display: inline-block;
-}
-
-/* Keyframes for back-and-forth animation */
-@keyframes scroll-back-and-forth {
-    0% {
-        transform: translateX(0); /* Start at the original position */
-    }
-    50% {
-        transform: translateX(-45%); /* Move halfway to the left */
-    }
-    100% {
-        transform: translateX(0); /* Move back to the original position */
-    }
 }
 
 /* ----------------------------------------------  FOOTER  -------------------------------------------- */

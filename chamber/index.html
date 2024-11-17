@@ -24,6 +24,7 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,14 +47,83 @@
         <button id="ham-button" aria-label="menu"></button>
         <!--navigation-->
         <nav class="nav-bar">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
         </nav>
     </header>
 
-    <div class="logo-reel"></div>
+    <main>
+        <section id="hero">
+            <picture id="hero-img">
+                <source srcset="images/mangrove-city-3000x1000.webp" media="(min-width: 768px)" width="3000" height="1000">
+                <img src="images/mangrove-city-1800x1000.webp" alt="Where Beauty and Business Meet" width="1800" height="998">
+            </picture>
+            <a href="join.html">
+                <button id="call-to-action" class="bold">Click Here To Join</button>
+            </a>
+        </section>
+
+        <section id="info-cards" class="cards-section">
+            <!-- Events -->
+            <section class="card">
+                <h2>Events</h2>
+                <div class="events">
+
+                </div>
+            </section>
+
+            <!-- Current Weather Card -->
+            <section class="card">
+                <h2>Weather in Abu Dhabi</h2>
+                <div class="conditions">
+                    <figure id="weather-main">
+                        <img id="weather-icon" src="" alt="">
+                        <span class="bold" id="current-temp"></span>
+                        <figcaption></figcaption>
+                    </figure>
+                    <table class="conditions-table">
+                        <tr class="visually-hidden">
+                            <th>Condition:</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td class="right-justify">Humidity:</td>
+                            <td><span id="current-humid"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="right-justify">Wind Speed:</td>
+                            <td><span id="wind-speed"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="right-justify">Pressure:</td>
+                            <td><span id="pressure"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="right-justify">Visibility:</td>
+                            <td><span id="visibility"></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Forecast Weather Card -->
+            <section class="card">
+                <h2>Forecast Weather</h2>
+                <div class="conditions">
+                    <table class="conditions-table">
+                        <tr class="visually-hidden">
+                            <th>Day</th>
+                            <th>Temperature</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+        <section class="logo-reel"></section>
+    </main>
 
     <footer>
         <div id="contact">
