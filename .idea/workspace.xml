@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update links">
-      <change afterPath="$PROJECT_DIR$/chamber/images/mangrove-city-1800x1000.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/images/mangrove-city-3000x1000.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/weather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2024,_8_41 pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_11_2024__8_41pm__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2024,_10_34 am_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2024,_8_20 am_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2024__10_34am__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2024__8_20am__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/directory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/discover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/scripts/chamber.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/chamber.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/scripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/home.js" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add hero img, call to action and events to chamber home page">
       <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +104,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="16998000" />
+      <workItem from="1731733571153" duration="17765000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -340,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731674465915</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add hero img, call to action and events to chamber home page">
+      <option name="closed" value="true" />
+      <created>1731861604254</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731861604254</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +373,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct meta and nav hover" />
     <MESSAGE value="correct img width" />
     <MESSAGE value="correct img sizes" />
     <MESSAGE value="correct wayfinding" />
@@ -408,6 +397,7 @@
     <MESSAGE value="add weather card" />
     <MESSAGE value="update weather card" />
     <MESSAGE value="update links" />
-    <option name="LAST_COMMIT_MESSAGE" value="update links" />
+    <MESSAGE value="add hero img, call to action and events to chamber home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hero img, call to action and events to chamber home page" />
   </component>
 </project>
