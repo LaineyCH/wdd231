@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+    main {
+        min-height: 300px;
+    }
 
     #ham-button {
         display: none;
