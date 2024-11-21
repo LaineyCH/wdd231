@@ -50,7 +50,7 @@ function displayMemberSpotlight(members) {
         offer.classList.add('offer');
         offer.classList.add('bold');
         card.setAttribute('class', 'card');
-        image.setAttribute('src', `./images/${member.img}`);
+        image.setAttribute('src', `images/${member.img}`);
         image.setAttribute('alt', `${member.companyname} Business Logo`);
         ownerName.classList.add('bold');
         ownerName.textContent = member.ownername;

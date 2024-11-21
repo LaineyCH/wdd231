@@ -45,7 +45,7 @@ function displayMemberCards() {
         // set content / attributes
         companyName.textContent = `${member.companyname}`;
         card.setAttribute('class', 'card');
-        image.setAttribute('src', `./images/${member.img}`);
+        image.setAttribute('src', `images/${member.img}`);
         image.setAttribute('alt', `${member.companyname} Business Logo`);
         ownerName.classList.add('bold');
         ownerName.textContent = member.ownername
