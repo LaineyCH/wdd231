@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add hero img, call to action and events to chamber home page">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add hover effect to call to action button">
+      <change afterPath="$PROJECT_DIR$/weather-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/scripts/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +53,7 @@
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.modules.html.executor": "Run",
     "JavaScript Debug.prophets.html.executor": "Run",
+    "JavaScript Debug.weather-test.html.executor": "Run",
     "JavaScript Debug.weather.html.executor": "Run",
     "Node.js.courses.js.executor": "Run",
     "Node.js.test.js.executor": "Run",
@@ -104,7 +110,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="17765000" />
+      <workItem from="1731733571153" duration="26928000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -330,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731861604254</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add hover effect to call to action button">
+      <option name="closed" value="true" />
+      <created>1731862222626</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731862222626</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +387,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct img width" />
     <MESSAGE value="correct img sizes" />
     <MESSAGE value="correct wayfinding" />
     <MESSAGE value="add favicon" />
@@ -398,6 +411,7 @@
     <MESSAGE value="update weather card" />
     <MESSAGE value="update links" />
     <MESSAGE value="add hero img, call to action and events to chamber home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hero img, call to action and events to chamber home page" />
+    <MESSAGE value="add hover effect to call to action button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hover effect to call to action button" />
   </component>
 </project>

@@ -31,6 +31,10 @@ body {
     font-family: var(--font-page), sans-serif;
 }
 
+main {
+    height: 600px;
+}
+
 /* --------------------------------------  HEADER AND NAVIGATION ------------------------------------------------ */
 header {
     display: grid;

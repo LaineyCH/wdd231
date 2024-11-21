@@ -4,7 +4,9 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const figCaption = document.querySelector('figcaption');
 const apiKey = "1da63a895013ffacc190e8fd2edd5ed9";
+
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
 const currentHumid = document.querySelector('#current-humid');
 const wind = document.querySelector('#wind-speed');
 const pressure = document.querySelector('#pressure');
@@ -24,7 +26,22 @@ async function apiFetch() {
     }
 }
 
+async function apiForecastFetch() {
+    try {
+        const response = await fetch(url2);
+        if (!response.ok) {
+            throw Error(await response.text());
+        }
+        data = await response.json();
+        console.log(data.list);
+        displayForecasts(data.list);
+    } catch (error) {
+        console.log("Encountered error during fetch:", error);
+    }
+}
+
 apiFetch();
+apiForecastFetch();
 
 function displayResults() {
     let temperature = Math.round(parseFloat(data.main.temp));
@@ -46,6 +63,28 @@ function displayResults() {
     wind.innerHTML = `${windSpeed}m/s ${windDirection}`;
     pressure.innerHTML = `${data.main.pressure} hPa`;
     visibility.innerHTML = `${data.visibility} m`
+}
+
+function displayForecasts(list) {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    const afterTomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+    afterTomorrow.setDate(today.getDate() + 2);
+
+    const todayStr = formatDate(today);
+    const tomorrowStr = formatDate(tomorrow);
+    const afterTomorrowStr = formatDate(afterTomorrow);
+
+    const todayForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === todayStr);
+    const tomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === tomorrowStr);
+    const afterTomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === dayAfterTomorrowStr);
+
+}
+
+// Format the date as YYYY-MM-DD
+function formatDate(date) {
+    return date.toISOString().split('T')[0];
 }
 
 function capitalize(words) {
