@@ -97,19 +97,50 @@ function displayForecasts(list) {
     const afterTomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === afterTomorrowDateStr);
 
     console.log("today, tomorrow, next day:")
-    console.log(todayForecast[0].main.temp_min);
-    console.log(tomorrowForecast[0].main.temp_max);
-    console.log(afterTomorrowForecast[0].main.temp_max);
+    console.log(todayForecast);
+    console.log(tomorrowForecast);
+    console.log(afterTomorrowForecast);
 
     // insert forecasts into HTML
-    todayTempHigh.innerHTML = `${todayForecast[0].main.temp_max}°C`;
-    todayTempLow.innerHTML = `${todayForecast[0].main.temp_min}°C`;
-    tomorrowName.innerHTML = `${tomorrowStr}`;
-    tomorrowTempHigh.innerHTML = `${tomorrowForecast[0].main.temp_max}°C`;
-    tomorrowTempLow.innerHTML = `${tomorrowForecast[0].main.temp_min}°C`;
-    afterTomorrowName.innerHTML = `${afterTomorrowStr}`;
-    afterTomorrowTempHigh.innerHTML = `${afterTomorrowForecast[0].main.temp_max}°C`;
-    afterTomorrowTempLow.innerHTML = `${afterTomorrowForecast[0].main.temp_min}°C`;
+    if (todayForecast.length > 0) {
+        const maxTemp = Math.max(...todayForecast.map(item => item.main.temp_max));
+        todayTempHigh.innerHTML = `${maxTemp.toFixed(2)}°C`;
+        const minTemp = Math.min(...todayForecast.map(item => item.main.temp_min));
+        todayTempLow.innerHTML = `${minTemp.toFixed(2)}°C`;
+    } else {
+        todayTempHigh.innerHTML = `N/A`;
+        todayTempLow.innerHTML = `N/A`;
+    }
+
+    if (tomorrowForecast.length > 0) {
+        // Sum all temperatures
+        const totalTemp = tomorrowForecast.reduce((sum, item) => sum + item.main.temp, 0);
+        // get average
+        const averageTemp = totalTemp / tomorrowForecast.length;
+        tomorrowName.innerHTML = `${tomorrowStr}`;
+        tomorrowTempHigh.innerHTML = `${averageTemp.toFixed(2)}°C`;
+        let tomorrowOutlook = capitalize(tomorrowForecast[0].weather[0].description);
+        tomorrowTempLow.innerHTML = `${tomorrowOutlook}`;
+    } else {
+        tomorrowName.innerHTML = `${tomorrowStr}`;
+        tomorrowTempHigh.innerHTML = `N/A`;
+        tomorrowTempLow.innerHTML = `N/A`;
+    }
+
+    if (afterTomorrowForecast.length > 0) {
+        // Sum all temperatures
+        const totalTemp2 = afterTomorrowForecast.reduce((sum, item) => sum + item.main.temp, 0);
+        // get average
+        const averageTemp2 = totalTemp2 / afterTomorrowForecast.length;
+        afterTomorrowName.innerHTML = `${afterTomorrowStr}`;
+        afterTomorrowTempHigh.innerHTML = `${averageTemp2.toFixed(2)}°C`;
+        let afterTomorrowOutlook = capitalize(afterTomorrowForecast[0].weather[0].description);
+        afterTomorrowTempLow.innerHTML = `${afterTomorrowOutlook}`;
+    } else {
+        afterTomorrowName.innerHTML = `${afterTomorrowStr}`;
+        afterTomorrowTempHigh.innerHTML = `N/A`;
+        afterTomorrowTempLow.innerHTML = `N/A`;
+    }
 }
 
 function formatDate(date) {
