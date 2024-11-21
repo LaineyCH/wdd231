@@ -42,6 +42,7 @@ function displayMemberSpotlight(members) {
         const phone = document.createElement('p');
         const urlP = document.createElement('p');
         const url = document.createElement('a');
+        const membership = document.createElement('p');
 
         // Set content and attributes
         companyName.textContent = member.companyname;
@@ -52,8 +53,6 @@ function displayMemberSpotlight(members) {
         card.setAttribute('class', 'card');
         image.setAttribute('src', `images/${member.img}`);
         image.setAttribute('alt', `${member.companyname} Business Logo`);
-        ownerName.classList.add('bold');
-        ownerName.textContent = member.ownername;
         address.textContent = `${member.address.number} ${member.address.street}, ${member.address.area}, ${member.address.city}`;
         phone.textContent = member.phone;
         url.href = `http://${member.url}`;
@@ -65,17 +64,20 @@ function displayMemberSpotlight(members) {
         image.setAttribute('width', '500');
         image.setAttribute('height', '500');
         detailsDiv.setAttribute('class', 'details-div');
+        membershipType = getMembership(member.membership);
+        membership.innerHTML = `${membershipType} Member`;
 
         // Build the card
         card.appendChild(companyName);
         card.appendChild(offer);
         card.appendChild(image);
-        detailsDiv.appendChild(ownerName);
-        detailsDiv.appendChild(address);
         detailsDiv.appendChild(phone);
+        detailsDiv.appendChild(address);
         urlP.appendChild(url);
         detailsDiv.appendChild(urlP);
+        detailsDiv.appendChild(membership);
         card.appendChild(detailsDiv);
+
 
         // Append the card to the spotlightCards container
         spotlightCards.appendChild(card);
@@ -114,6 +116,19 @@ function generateLogoReel(members) {
         // add card to logoWrapper element in html
         logoReel.appendChild(logoWrapper);
     })
+}
+
+function getMembership(number) {
+    switch (number) {
+        case 1:
+            return ""
+        case 2:
+            return "Silver"
+        case 3:
+            return "Gold"
+        default:
+            return "";
+    }
 }
 
 logoWrapper.addEventListener('mouseover', () => {

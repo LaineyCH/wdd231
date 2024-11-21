@@ -104,9 +104,9 @@ function displayForecasts(list) {
     // insert forecasts into HTML
     if (todayForecast.length > 0) {
         const maxTemp = Math.max(...todayForecast.map(item => item.main.temp_max));
-        todayTempHigh.innerHTML = `${maxTemp.toFixed(2)}°C`;
+        todayTempHigh.innerHTML = `${maxTemp.toFixed(0)}°C`;
         const minTemp = Math.min(...todayForecast.map(item => item.main.temp_min));
-        todayTempLow.innerHTML = `${minTemp.toFixed(2)}°C`;
+        todayTempLow.innerHTML = `${minTemp.toFixed(0)}°C`;
     } else {
         todayTempHigh.innerHTML = `N/A`;
         todayTempLow.innerHTML = `N/A`;
@@ -118,7 +118,7 @@ function displayForecasts(list) {
         // get average
         const averageTemp = totalTemp / tomorrowForecast.length;
         tomorrowName.innerHTML = `${tomorrowStr}`;
-        tomorrowTempHigh.innerHTML = `${averageTemp.toFixed(2)}°C`;
+        tomorrowTempHigh.innerHTML = `${averageTemp.toFixed(0)}°C`;
         let tomorrowOutlook = capitalize(tomorrowForecast[0].weather[0].description);
         tomorrowTempLow.innerHTML = `${tomorrowOutlook}`;
     } else {
@@ -133,7 +133,7 @@ function displayForecasts(list) {
         // get average
         const averageTemp2 = totalTemp2 / afterTomorrowForecast.length;
         afterTomorrowName.innerHTML = `${afterTomorrowStr}`;
-        afterTomorrowTempHigh.innerHTML = `${averageTemp2.toFixed(2)}°C`;
+        afterTomorrowTempHigh.innerHTML = `${averageTemp2.toFixed(0)}°C`;
         let afterTomorrowOutlook = capitalize(afterTomorrowForecast[0].weather[0].description);
         afterTomorrowTempLow.innerHTML = `${afterTomorrowOutlook}`;
     } else {
