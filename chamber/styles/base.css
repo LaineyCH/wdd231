@@ -479,6 +479,19 @@ figcaption {
     text-align: center;
 }
 
+/* default table layout for weather table */
+.conditions-table table {
+    display: table;
+}
+
+.conditions-table tr {
+    display: table-row;
+}
+
+.conditions-table th, .conditions-table td {
+    display: table-cell;
+}
+
 /* --------------------------------- DIRECTORY PAGE: DIRECTORY SELECTION BUTTONS --------------------------------- */
 
 #directory-view {
