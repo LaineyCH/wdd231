@@ -5,7 +5,7 @@
     --font-text: Georgia, 'Times New Roman', Times, serif;
     /* colors */
     --background: white;
-    --red: #da5502;
+    --red: #a32002;
     --sun: #efac23;
     --sand: rgb(253, 233, 192);
     --light-aqua: #def8fd;
@@ -215,16 +215,19 @@ main {
 
 #call-to-action {
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     right: 20px;
-    background-color: var(--red);
-    color: white;
+    background-color: var(--sand);
+    color: black;
     font-family: var(--font-page), sans-serif;
     padding: 0.8rem;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, background-color 0.3s;
+}
+
+#hero button{
+    font-size: 1.5rem;
 }
 
 #call-to-action:hover {
