@@ -3,16 +3,25 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const figCaption = document.querySelector('figcaption');
-const apiKey = "1da63a895013ffacc190e8fd2edd5ed9";
-
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
 const currentHumid = document.querySelector('#current-humid');
 const wind = document.querySelector('#wind-speed');
 const pressure = document.querySelector('#pressure');
 const visibility = document.querySelector('#visibility');
+const todayTempHigh = document.querySelector('#today-temp-high');
+const todayTempLow = document.querySelector('#today-temp-low');
+const tomorrowName = document.querySelector('#tomorrow');
+const tomorrowTempHigh = document.querySelector('#tomorrow-temp-high');
+const tomorrowTempLow = document.querySelector('#tomorrow-temp-low');
+const afterTomorrowName = document.querySelector('#after-tomorrow');
+const afterTomorrowTempHigh = document.querySelector('#after-tomorrow-temp-high');
+const afterTomorrowTempLow = document.querySelector('#after-tomorrow-temp-low');
 
-async function apiFetch() {
+// open weather API
+const apiKey = "1da63a895013ffacc190e8fd2edd5ed9";
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?lat=24.46&lon=54.37&appid=${apiKey}&units=metric`;
+
+async function apiWeatherFetch() {
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -20,7 +29,7 @@ async function apiFetch() {
         }
         data = await response.json();
         console.log(data);
-        displayResults(data);
+        displayCurrentWeather(data);
     } catch (error) {
         console.log("Encountered error during fetch:", error);
     }
@@ -40,10 +49,10 @@ async function apiForecastFetch() {
     }
 }
 
-apiFetch();
+apiWeatherFetch();
 apiForecastFetch();
 
-function displayResults() {
+function displayCurrentWeather() {
     let temperature = Math.round(parseFloat(data.main.temp));
     currentTemp.innerHTML = `${temperature}°C`;
     const imgUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
@@ -66,24 +75,45 @@ function displayResults() {
 }
 
 function displayForecasts(list) {
+    // find today, tomorrow and the day after tomorrow dates
     const today = new Date();
     const tomorrow = new Date(today);
     const afterTomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
     afterTomorrow.setDate(today.getDate() + 2);
 
-    const todayStr = formatDate(today);
-    const tomorrowStr = formatDate(tomorrow);
-    const afterTomorrowStr = formatDate(afterTomorrow);
+    // find the names of the week for tomorrow and the dat after tomorrow
+    const tomorrowStr = tomorrow.toLocaleDateString('en-US', {weekday: 'long'});
+    const afterTomorrowStr = afterTomorrow.toLocaleDateString('en-US', {weekday: 'long'});
 
-    const todayForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === todayStr);
-    const tomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === tomorrowStr);
-    const afterTomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === dayAfterTomorrowStr);
+    // format the date to YYYY-MM-DD
+    const todayDateStr = formatDate(today);
+    const tomorrowDateStr = formatDate(tomorrow);
+    const afterTomorrowDateStr = formatDate(afterTomorrow);
 
+    //filter the data results to find the relevant days
+    const todayForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === todayDateStr);
+    const tomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === tomorrowDateStr);
+    const afterTomorrowForecast = list.filter(item => formatDate(new Date(item.dt * 1000)) === afterTomorrowDateStr);
+
+    console.log("today, tomorrow, next day:")
+    console.log(todayForecast[0].main.temp_min);
+    console.log(tomorrowForecast[0].main.temp_max);
+    console.log(afterTomorrowForecast[0].main.temp_max);
+
+    // insert forecasts into HTML
+    todayTempHigh.innerHTML = `${todayForecast[0].main.temp_max}°C`;
+    todayTempLow.innerHTML = `${todayForecast[0].main.temp_min}°C`;
+    tomorrowName.innerHTML = `${tomorrowStr}`;
+    tomorrowTempHigh.innerHTML = `${tomorrowForecast[0].main.temp_max}°C`;
+    tomorrowTempLow.innerHTML = `${tomorrowForecast[0].main.temp_min}°C`;
+    afterTomorrowName.innerHTML = `${afterTomorrowStr}`;
+    afterTomorrowTempHigh.innerHTML = `${afterTomorrowForecast[0].main.temp_max}°C`;
+    afterTomorrowTempLow.innerHTML = `${afterTomorrowForecast[0].main.temp_min}°C`;
 }
 
-// Format the date as YYYY-MM-DD
 function formatDate(date) {
+    // Formats the date as YYYY-MM-DD
     return date.toISOString().split('T')[0];
 }
 
