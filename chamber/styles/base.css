@@ -326,8 +326,38 @@ main {
     background-color: var(--teal);
 }
 
+.events {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.events > p {
+    font-family: var(--font-page), sans-serif;
+    font-size: 1.2rem;
+}
+
+.events > h3 {
+    font-family: var(--font-heading), serif;
+    font-size: 1.5rem;
+}
+
 .details-div {
     padding: 1rem;
+}
+
+#spotlight-cards .card {
+    background-color: white;
+}
+
+#spotlight-cards.cards-section .card:nth-child(3) {
+    display: none; /* Hides the third card */
+}
+
+.offer {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-family: var(--font-page), sans-serif;
 }
 
 /* --------------------------------------------------- TABLES --------------------------------------------------- */

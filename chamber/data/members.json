@@ -12,7 +12,9 @@
     "url" : "www.SweetLifeBakery.com",
     "img" : "slbakery.webp",
     "membership": 2,
-    "category" : "food services"
+    "category" : "food services",
+    "offer" : "free cupcake",
+    "color" : "E40682"
   },
   {
     "companyname" : "Ash's Attic",
@@ -27,7 +29,9 @@
     "url" : "www.AshAttic.com",
     "img" : "ash-attic.webp",
     "membership": 2,
-    "category" : "art craft"
+    "category" : "art craft",
+    "offer" : "holiday sale",
+    "color" : "01CECA"
   },
   {
     "companyname" : "Nick Knacks",
@@ -42,7 +46,8 @@
     "url" : "www.nickknacks.com",
     "img" : "nickknacks.webp",
     "membership": 1,
-    "category" : "charity"
+    "category" : "charity",
+    "color" : "FF0000"
   },
   {
     "companyname" : "Corner Market",
@@ -57,7 +62,9 @@
     "url" : "www.corner-market.com",
     "img" : "cornerm.webp",
     "membership": 3,
-    "category" : "groceries"
+    "category" : "groceries",
+    "offer" : "bogof",
+    "color" : "CC161C"
   },
   {
     "companyname" : "Oasis Spa",
@@ -72,7 +79,9 @@
     "url" : "www.OasisSpa.com",
     "img" : "oasis.webp",
     "membership": 2,
-    "category" : "health wellbeing"
+    "category" : "health wellbeing",
+    "offer" : "10% off treatment",
+    "color" : "0B8442"
   },
   {
     "companyname" : "Elaison cc",
@@ -87,7 +96,9 @@
     "url" : "www.elaison.com",
     "img" : "elaison.webp",
     "membership": 3,
-    "category" : "manufacturing"
+    "category" : "manufacturing",
+    "offer" : "free consultaion",
+    "color" : "ED8C22"
   },
   {
     "companyname" : "Atium Technologies",
@@ -102,6 +113,8 @@
     "url" : "www.AtiumTech.com",
     "img" : "atium.webp",
     "membership": 3,
-    "category" : "technology"
+    "category" : "technology",
+    "offer" : "20% off",
+    "color" : "CE1717"
   }
 ]
