@@ -277,6 +277,26 @@ figcaption {
     padding: 1rem
 }
 
+/* ------------------ MODAL ------------------- */
+dialog {
+    padding: 1em;
+    max-width: 500px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+
+dialog::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 button {
     padding: 1rem;
     background-color: var(--dark-green);

@@ -106,13 +106,16 @@ function generate_courses(filterPhrase) {
     }
     // mark the selected button as visually active
     changeSelectedButton(filterPhrase);
+
     // display the selected courses
     const htmlCourses = filteredCourses.map(
         (course) =>
             `<div class="course-div completed-${course.completed}">${course.subject} ${course.number}</div>`
     );
+
     // send the selected courses to the html div
     document.getElementById("courses-content").innerHTML = htmlCourses.join('');
+
     // get the total number of credits as well as incomplete credits and send to html div
     const {totalCredits, incompleteCredits} = filteredCourses.reduce(
         (acc, course) => {
@@ -157,4 +160,39 @@ cseButton.addEventListener('click', () => {
 });
 wddButton.addEventListener('click', () => {
     generate_courses("wdd");
+});
+
+// MODAL
+const courseInfo = document.querySelector("#course-info");
+
+function openCourseInfo(course) {
+    // clear modal
+    courseInfo.innerHTML = '';
+    // add elements to the modal
+    const modalH1 = document.createElement("h1");
+    modalH1.innerHTML = `${course.subject} ${course.number}`;
+    const modalH2 = document.createElement("h2");
+    modalH2.innerHTML = `${course.title}`;
+    const modalP1 = document.createElement("p");
+    modalP1.innerHTML = `Credits: ${course.credits}`;
+    const modalP2 = document.createElement("p");
+    modalP2.innerHTML = `${course.description}`;
+    const modalP3 = document.createElement("p");
+    modalP3.innerHTML = `Certificate: ${course.certificate}`;
+    const modalP4 = document.createElement("p");
+    modalP4.innerHTML = `Technologies: ${course.technology.join(", ")}`;
+    const closeModal = document.createElement('button');
+    closeModal.setAttribute('id', 'close-modal');
+    closeModal.innerHTML = "Close";
+    // display the populated modal
+    courseInfo.showModal();
+    // add event listener to button to close modal
+    closeModal.addEventListener("click", () => {
+        courseInfo.close();
+    });
+}
+
+// create event listener for course
+courseDiv.addEventListener('click', () => {
+    openCourseInfo(course);
 });

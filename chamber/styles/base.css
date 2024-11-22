@@ -519,6 +519,10 @@ button:hover {
     border-radius: 10px;
 }
 
+button:active {
+    transform: scale(0.9);
+}
+
 .button-symbol {
     width: 50px;
     height: auto;
