@@ -277,28 +277,41 @@ figcaption {
     padding: 1rem
 }
 
-/* ------------------ MODAL ------------------- */
+/* modal */
 dialog {
-    padding: 1em;
-    max-width: 500px;
+    max-width: 400px;
     border: 1px solid rgb(0 0 0 / 0.1);
     box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    position: fixed; /* relative to viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* Prevent scrollbars inside the dialog */
+    border-radius: 10px;
+    font-family: var(--font-page), sans-serif;
+    padding-bottom: 1rem;
+}
+
+dialog h1 {
+    padding: 1rem;
+    background-color: var(--light-green);
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.8rem;
+}
+
+dialog > h2, dialog > p {
+    padding: 1rem;
 }
 
 dialog::backdrop {
     background: rgb(0 0 0 / 0.5);
 }
 
-dialog button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-}
-
 button {
-    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: var(--dark-green);
     color: white;
     font-family: var(--font-page), sans-serif;
@@ -309,11 +322,35 @@ button {
     width: 25%;
 }
 
+/* modal button */
+dialog button {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: white;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+    box-shadow: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 button:hover {
     background-color: var(--sand-color);
     color: black;
     font-weight: 700;
     border-radius: 10px;
+}
+
+dialog button:hover {
+    background-color: transparent;
 }
 
 .completed-true {

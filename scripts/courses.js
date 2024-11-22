@@ -108,13 +108,24 @@ function generate_courses(filterPhrase) {
     changeSelectedButton(filterPhrase);
 
     // display the selected courses
-    const htmlCourses = filteredCourses.map(
-        (course) =>
-            `<div class="course-div completed-${course.completed}">${course.subject} ${course.number}</div>`
-    );
+    let htmlCourses = "";
+    filteredCourses.forEach((course) => {
+        // Generate HTML for each course
+        htmlCourses += `<div class="course-div completed-${course.completed}" data-course='${JSON.stringify(course)}'>
+        ${course.subject} ${course.number}
+    </div>`;
+    });
 
-    // send the selected courses to the html div
-    document.getElementById("courses-content").innerHTML = htmlCourses.join('');
+    // send the generated courses to the HTML div
+    document.getElementById("courses-content").innerHTML = htmlCourses;
+
+    // attach event listeners to each course div
+    document.querySelectorAll(".course-div").forEach((courseDiv) => {
+        const course = JSON.parse(courseDiv.getAttribute("data-course"));
+        courseDiv.addEventListener("click", () => {
+            openCourseInfo(course);
+        });
+    });
 
     // get the total number of credits as well as incomplete credits and send to html div
     const {totalCredits, incompleteCredits} = filteredCourses.reduce(
@@ -183,7 +194,17 @@ function openCourseInfo(course) {
     modalP4.innerHTML = `Technologies: ${course.technology.join(", ")}`;
     const closeModal = document.createElement('button');
     closeModal.setAttribute('id', 'close-modal');
-    closeModal.innerHTML = "Close";
+    closeModal.innerHTML = "❌";
+
+    // append elements to the modal container
+    courseInfo.appendChild(modalH1);
+    courseInfo.appendChild(modalH2);
+    courseInfo.appendChild(modalP1);
+    courseInfo.appendChild(modalP2);
+    courseInfo.appendChild(modalP3);
+    courseInfo.appendChild(modalP4);
+    courseInfo.appendChild(closeModal);
+
     // display the populated modal
     courseInfo.showModal();
     // add event listener to button to close modal
@@ -191,8 +212,3 @@ function openCourseInfo(course) {
         courseInfo.close();
     });
 }
-
-// create event listener for course
-courseDiv.addEventListener('click', () => {
-    openCourseInfo(course);
-});
