@@ -51,7 +51,96 @@
         </nav>
     </header>
 
-    <h2>Join Page Coming Soon</h2>
+    <main id="join-main">
+        <form method="get" action="thankyou.html" class="aform">
+            <h2 id="form-heading">Membership Apllication</h2>
+            <fieldset>
+                <!-- First Name -->
+                <label class="input-title">First Name:
+                    <input type="text" id="first-name" name="first-name" title="Enter your first name" aria-label="Enter your first name"
+                       autocomplete="given-name" required>
+                </label>
+
+                <!-- Last Name -->
+                <label class="input-title">Last Name:
+                    <input type="text" id="last-name" name="last-name" title="Enter your last name" aria-label="Enter your last name"
+                       autocomplete="family-name" required>
+                </label>
+
+                <!-- Organizational Title -->
+                <label class="input-title">Organizational Title:
+                    <input type="text" id="org-title" name="org-title" title="Enter your organizational title (alpha characters, hyphens, and spaces only, minimum 7 characters)"
+                       aria-label="Enter your organizational title (alpha characters, hyphens, and spaces only, minimum 7 characters)"
+                       autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+                </label>
+
+                <!-- Email Address -->
+                <label class="input-title">Email Address:
+                <input type="email" id="email" name="email" title="Enter a valid email address" aria-label="Enter a valid email address"
+                       autocomplete="email" placeholder="example@example.com" required>
+                </label>
+
+                <!-- Mobile Phone -->
+                <label class="input-title">Mobile Phone:
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" aria-label="Enter your mobile phone number"
+                        autocomplete="tel" required>
+                </label>
+
+                <!-- Business/Organization Name -->
+                <label class="input-title">Business/Organization Name:
+                    <input type="text" id="org-name" name="org-name" title="Enter your business/organization's name" aria-label="Enter your business/organization's name"
+                        autocomplete="organization" required>
+                </label>
+
+                <!-- Membership Level -->
+                <label class="input-title">Membership Level:
+                    <select id="membership" name="membership" aria-label="Select membership level" required>
+                        <option value="" aria-label="select product" selected disabled>Select a membership... &#9662;</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <!-- Business/Organization Description -->
+                <label class="input-title">Business/Organization Description: <br>
+                    <textarea id="description" name="description" rows="4" cols="50"
+                            title="Provide a description of your business or organization" aria-label="Provide a description of your business or organization">
+                    </textarea>
+                </label>
+
+                <!-- Timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <!-- Submit button -->
+                <input type="submit" id="submit-button" value="Apply for Membership" aria-label="Apply for Membership">
+            </fieldset>
+        </form>
+        <section id="membership-cards" class="cards-section">
+            <!-- NP Membership Card -->
+            <section class="card np-card">
+                <h2>NP Membership</h2>
+
+            </section>
+            <!-- Bronze Membership Card -->
+            <section class="card bronze-card">
+                <h2>Bronze Membership</h2>
+
+            </section>
+            <!-- Silve Membership Card -->
+            <section class="card  silver-card">
+                <h2>Silver Membership</h2>
+
+            </section>
+            <!-- Gold Membership Card -->
+            <section class="card gold-card">
+                <h2>Gold Membership</h2>
+
+            </section>
+        </section>
+    </main>
+
 
     <footer>
         <div id="contact">

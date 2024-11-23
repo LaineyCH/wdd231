@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="remove console.logs">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update coursework list">
+      <change afterPath="$PROJECT_DIR$/chamber/scripts/join.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chamber/thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,7 @@
     "JavaScript Debug.discover.html.executor": "Run",
     "JavaScript Debug.home.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.join.html.executor": "Run",
     "JavaScript Debug.modules.html.executor": "Run",
     "JavaScript Debug.prophets.html.executor": "Run",
     "JavaScript Debug.weather-test.html.executor": "Run",
@@ -106,23 +112,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="80525000" />
-    </task>
-    <task id="LOCAL-00006" summary="add favicon">
-      <option name="closed" value="true" />
-      <created>1731076061920</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1731076061920</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add social media meta tags">
-      <option name="closed" value="true" />
-      <created>1731079722517</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1731079722517</updated>
+      <workItem from="1731733571153" duration="90494000" />
     </task>
     <task id="LOCAL-00008" summary="add prophets site">
       <option name="closed" value="true" />
@@ -500,7 +490,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732358037074</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="add link to form activity">
+      <option name="closed" value="true" />
+      <created>1732358197084</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1732358197084</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update coursework list">
+      <option name="closed" value="true" />
+      <created>1732358337520</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1732358337520</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,8 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update weather card" />
-    <MESSAGE value="update links" />
     <MESSAGE value="add hero img, call to action and events to chamber home page" />
     <MESSAGE value="add hover effect to call to action button" />
     <MESSAGE value="add forecast api" />
@@ -568,6 +572,8 @@
     <MESSAGE value="update color" />
     <MESSAGE value="add temple appointment form" />
     <MESSAGE value="remove console.logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove console.logs" />
+    <MESSAGE value="add link to form activity" />
+    <MESSAGE value="update coursework list" />
+    <option name="LAST_COMMIT_MESSAGE" value="update coursework list" />
   </component>
 </project>
