@@ -280,7 +280,7 @@ figcaption {
 /* modal */
 dialog {
     max-width: 400px;
-    border: 1px solid rgb(0 0 0 / 0.1);
+    border: 1px solid rgb(0 0 0 / 0.8);
     box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
     position: fixed; /* relative to viewport */
     top: 50%;

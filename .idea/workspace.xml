@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update rainbow colours">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/blue.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/blue.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/green.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/green.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/indigo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/indigo.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/violet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/violet.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/yellow.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/yellow.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,15 +106,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="75051000" />
-    </task>
-    <task id="LOCAL-00002" summary="correct meta and nav hover">
-      <option name="closed" value="true" />
-      <created>1731046299745</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1731046299745</updated>
+      <workItem from="1731733571153" duration="76017000" />
     </task>
     <task id="LOCAL-00003" summary="correct img sizes">
       <option name="closed" value="true" />
@@ -507,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732350652502</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update rainbow colours">
+      <option name="closed" value="true" />
+      <created>1732352133511</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1732352133511</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
