@@ -499,22 +499,22 @@ footer {
     animation-duration: 2.2s;
 }
 #orange {
-    animation-duration: 2.3s;
-}
-#yellow {
     animation-duration: 2.4s;
 }
-#green {
-    animation-duration: 2.5s;
-}
-#blue {
+#yellow {
     animation-duration: 2.6s;
 }
+#green {
+    animation-duration: 2.8s;
+}
+#blue {
+    animation-duration: 3s;
+}
 #indigo {
-    animation-duration: 2.7s;
+    animation-duration: 3.2s;
 }
 #violet {
-    animation-duration: 2.8s;
+    animation-duration: 3.4s;
 }
 
 @keyframes rotateRings {
