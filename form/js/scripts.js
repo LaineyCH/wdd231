@@ -1,17 +1,13 @@
 // http://localhost:63342/wdd231/form/thanks.html?first=Elaine&last=Henson&phone=764-837-3456&email=elaine%40henson.me.uk&ordinance=Baptism&fecha=2024-11-06&location=Payson
 
 const currentUrl = window.location.href;
-console.log(currentUrl);
 
 const everything = currentUrl.split('?')
-console.log(everything);
 
 let formData = everything[1].split('&');
-console.log(formData);
 
 function show(keyword) {
     formData.forEach((item) => {
-        console.log(item);
         if (item.startsWith(keyword)) {
             result = item.split("=")[1].replace("%40", "@");
         }
