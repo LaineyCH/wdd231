@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add animation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/large.css" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add rainbow animation">
+      <change beforePath="$PROJECT_DIR$/images/blue.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/blue.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/green.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/green.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/indigo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/indigo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/orange.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/orange.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/red.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/red.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/violet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/violet.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/yellow.webp" beforeDir="false" afterPath="$PROJECT_DIR$/images/yellow.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +112,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="73138000" />
+      <workItem from="1731733571153" duration="74004000" />
     </task>
     <task id="LOCAL-00001" summary="adjust CSS and JS">
       <option name="closed" value="true" />
@@ -495,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732342646636</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add rainbow animation">
+      <option name="closed" value="true" />
+      <created>1732348005147</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1732348005147</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix link" />
     <MESSAGE value="fix image path" />
     <MESSAGE value="make image path absolute" />
     <MESSAGE value="toggle hide class for cards/table" />
@@ -563,6 +573,7 @@
     <MESSAGE value="add modal" />
     <MESSAGE value="complete modal" />
     <MESSAGE value="add animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add animation" />
+    <MESSAGE value="add rainbow animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rainbow animation" />
   </component>
 </project>
