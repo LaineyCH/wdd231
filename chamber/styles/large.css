@@ -5,8 +5,9 @@
 
     #join-main {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 50% 50%;
         grid-gap: 1rem;
+        width: 80%;
     }
 
     #ham-button {
@@ -78,7 +79,15 @@
     #membership-cards.cards-section {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #membership-cards .card {
+        width: 600px;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #info-cards > .card {

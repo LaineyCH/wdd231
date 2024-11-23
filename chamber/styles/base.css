@@ -618,7 +618,7 @@ textarea {
     max-width: 380px;
     box-shadow: 1px 1px 4px #999;
     font-size: 1.2em;
-    margin-top: 1rem;;
+    margin-top: 2rem;
 }
 
 /* Hint for required Fields*/
@@ -630,6 +630,64 @@ textarea {
 .aform input:required:valid,
 .aform select:required:valid {
     border-left: solid 8px green;
+}
+
+/* ------------------------------------------------  MODAL  ---------------------------------------------- */
+dialog {
+    max-width: 400px;
+    border: 1px solid rgb(0 0 0 / 0.8);
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    position: fixed; /* relative to viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* Prevent scrollbars inside the dialog */
+    border-radius: 10px;
+    font-family: var(--font-page), sans-serif;
+    padding-bottom: 1rem;
+}
+
+dialog h1 {
+    padding: 1rem;
+    background-color: var(--teal);
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.8rem;
+}
+
+dialog > h2, dialog > p {
+    padding: 1rem;
+}
+
+dialog::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: white;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+    box-shadow: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
 }
 
 /* ----------------------------------------------  FOOTER  -------------------------------------------- */
