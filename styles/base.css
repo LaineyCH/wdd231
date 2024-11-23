@@ -462,13 +462,75 @@ footer {
 @keyframes queueUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        translate: 0 40px;
+        scale: 150%;
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        translate: 0 0;
+        scale: 100%;
     }
 }
+
+#coursework-card{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+#rainbow {
+    position: absolute; /* Constrain the rainbow within the card */
+    bottom: 70px; /* Align it to the bottom of the card */
+    right: 50%; /* Center horizontally within the card */
+    transform: translate(-25px);
+}
+
+#red, #orange, #yellow, #green, #blue, #indigo, #violet {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    animation: rotateRings infinite linear;
+    pointer-events: auto;
+}
+
+#red {
+    animation-duration: 2.2s;
+}
+#orange {
+    animation-duration: 2.3s;
+}
+#yellow {
+    animation-duration: 2.4s;
+}
+#green {
+    animation-duration: 2.5s;
+}
+#blue {
+    animation-duration: 2.6s;
+}
+#indigo {
+    animation-duration: 2.7s;
+}
+#violet {
+    animation-duration: 2.8s;
+}
+
+@keyframes rotateRings {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#rainbow:hover img {
+    animation-play-state: paused;
+}
+
+
 
 /* Formatting for large view ports above 320px wide */
 @media (min-width: 330px) {
