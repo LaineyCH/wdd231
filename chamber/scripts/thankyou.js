@@ -4,11 +4,11 @@
 // &org-name=Capital+Quilters&membership=np&description=Guild+++&timestamp=2024-11-24T11%3A19%3A32.060Z
 
 const currentUrl = window.location.href;
-console.log(currentUrl);
+
 const everything = currentUrl.split('?')
-console.log(everything)
+
 let formData = everything[1].split('&');
-console.log(formData);
+
 
 // show the correct value for the key=value pairing
 function show(key) {
@@ -20,7 +20,7 @@ function show(key) {
                 .replace(/\+/g, " ");
         }
     })
-    console.log(result);
+
     return result;
 }
 
@@ -47,11 +47,11 @@ showInfo.innerHTML = `
     <td>${show("first-name")} ${show("last-name")}</td>
 </tr>
 <tr>
-    <td>Your phone:</td>
+    <td>Your mobile number:</td>
     <td>${show("phone")}</td>
 </tr>
 <tr>
-    <td>Your email:</td>
+    <td>Your email address:</td>
     <td><a href="mailto:${show("email")}?subject=Al%20Reem%20Chamber%20of%20Commerce,%20${show("membership")}%20Membership%20Application%20for%20${show("org-name")}">${show("email")}</a></td>
 </tr>
 <tr>
