@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="remove console logs">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update meta og tags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/scripts/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,23 +108,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="117258000" />
-    </task>
-    <task id="LOCAL-00015" summary="change file name">
-      <option name="closed" value="true" />
-      <created>1731331886907</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1731331886907</updated>
-    </task>
-    <task id="LOCAL-00016" summary="update file path to chamber site">
-      <option name="closed" value="true" />
-      <created>1731332044979</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1731332044979</updated>
+      <workItem from="1731733571153" duration="118234000" />
     </task>
     <task id="LOCAL-00017" summary="add table view and adjust styling">
       <option name="closed" value="true" />
@@ -504,7 +486,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732454385075</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="update modal colors">
+      <option name="closed" value="true" />
+      <created>1732455540620</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455540620</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update meta og tags">
+      <option name="closed" value="true" />
+      <created>1732455789237</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1732455789237</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,8 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add blank weather icon" />
-    <MESSAGE value="fix button link" />
     <MESSAGE value="update weather forecast" />
     <MESSAGE value="add spotlights" />
     <MESSAGE value="fix weather tables" />
@@ -572,6 +568,8 @@
     <MESSAGE value="add thank you page with results" />
     <MESSAGE value="update formatting" />
     <MESSAGE value="remove console logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove console logs" />
+    <MESSAGE value="update modal colors" />
+    <MESSAGE value="update meta og tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="update meta og tags" />
   </component>
 </project>
