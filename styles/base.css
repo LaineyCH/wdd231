@@ -530,8 +530,6 @@ footer {
     animation-play-state: paused;
 }
 
-
-
 /* Formatting for large view ports above 320px wide */
 @media (min-width: 330px) {
     #header-title {

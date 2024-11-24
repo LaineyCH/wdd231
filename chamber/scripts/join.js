@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // MODAL
 const membershipInfo = document.querySelector("#membership-info");
-const npCard = document.querySelector("#np-card");
-const bronzeCard = document.querySelector("#bronze-card");
-const silverCard = document.querySelector("#silver-card");
-const goldCard = document.querySelector("#gold-card");
+const npCard = document.querySelector("#np-info");
+const bronzeCard = document.querySelector("#bronze-info");
+const silverCard = document.querySelector("#silver-info");
+const goldCard = document.querySelector("#gold-info");
 
 function openMembershipInfo(membership) {
     // Clear the modal content
@@ -24,28 +24,63 @@ function openMembershipInfo(membership) {
     membershipInfo.appendChild(closeModal);
 
     // Add elements for membership description
+    const modalH2 = document.createElement('h2');
     const modalP = document.createElement('p');
+    const modalTable = document.createElement('table');
+    modalTable.setAttribute('class', 'modal-table');
+    // Row 1
+    const tr1 = document.createElement('tr');
+    const td1 = document.createElement('td');
+    td1.innerHTML = `Price per Year: `;
+    const tdPrice = document.createElement('td');
+    tdPrice.setAttribute('id', 'price');
+    // Row 2
+    const tr2 = document.createElement('tr');
+    const td2 = document.createElement('td');
+    td2.innerHTML = `Benefits: `;
+    const tdBenefits = document.createElement('td');
+    tdBenefits.setAttribute('id', 'benefits');
 
     // Populate contents based on membership type
     switch (membership) {
         case 'np':
-            modalP.innerHTML = 'Non-Profit Membership: Ideal for non-profit organizations with no membership fee.';
+            modalH2.innerHTML = 'Non-Profit Membership';
+            modalP.innerHTML = 'Ideal for non-profit organizations with no membership fee.';
+            tdPrice.innerHTML = 'FREE';
+            tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire.`;
             break;
         case 'bronze':
-            modalP.innerHTML = 'Bronze Membership: Basic membership offering standard benefits for small businesses.';
+            modalH2.innerHTML = 'Bronze Membership';
+            modalP.innerHTML = 'Basic membership offering standard benefits for small businesses.';
+            tdPrice.innerHTML = `500AED`;
+            tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire.`;
             break;
         case 'silver':
-            modalP.innerHTML = 'Silver Membership: Enhanced membership with additional networking opportunities.';
+            modalH2.innerHTML = 'Silver Membership';
+            modalP.innerHTML = 'Enhanced membership with additional networking opportunities.';
+            tdPrice.innerHTML = '1000AED';
+            tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire. <br> Home Page Spotlight.`;
             break;
         case 'gold':
-            modalP.innerHTML = 'Gold Membership: Premium membership with exclusive perks and maximum visibility.';
+            modalH2.innerHTML = 'Gold Membership';
+            modalP.innerHTML = 'Premium membership with exclusive perks and maximum visibility.';
+            tdPrice.innerHTML = '2000AED';
+            tdBenefits.innerHTML = `Member Directory Listing. <br> Free Table at Summer Faire. <br> Home Page Spotlight. Training.`;
             break;
         default:
             modalP.innerHTML = 'Invalid membership type selected.';
     }
 
     // Append description to the modal container
+    membershipInfo.appendChild(modalH2);
     membershipInfo.appendChild(modalP);
+    tr1.appendChild(td1);
+    tr1.appendChild(tdPrice);
+    modalTable.appendChild(tr1);
+    tr2.appendChild(td2);
+    tr2.appendChild(tdBenefits);
+    modalTable.appendChild(tr2);
+    membershipInfo.appendChild(modalTable);
 
     // Display the populated modal
     membershipInfo.showModal();

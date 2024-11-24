@@ -3,13 +3,6 @@
         min-height: 300px;
     }
 
-    #join-main {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 1rem;
-        width: 80%;
-    }
-
     #ham-button {
         display: none;
     }
@@ -76,20 +69,6 @@
         width: 100%;
     }
 
-    #membership-cards.cards-section {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #membership-cards .card {
-        width: 600px;
-        height: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #info-cards > .card {
         max-width: 800px;
     }
@@ -129,6 +108,61 @@
 
 }
 
+@media (min-width: 850px) {
+    #info p, #lastmodified {
+        font-size: 1rem;
+    }
+
+    #join-main {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 1rem;
+        width: 100%;
+    }
+
+    #membership-cards.cards-section {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #membership-cards .card {
+        width: 600px;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 995px) {
+
+    #join-main {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 1rem;
+        width: 80%;
+    }
+
+    #membership-cards.cards-section {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #membership-cards .card {
+        width: 600px;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (min-width: 1211px) {
 
     .cards-section {
@@ -161,8 +195,3 @@
     }
 }
 
-@media (min-width: 850px) {
-    #info p, #lastmodified {
-        font-size: 1rem;
-    }
-}
