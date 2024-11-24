@@ -42,12 +42,14 @@ function openMembershipInfo(membership) {
     const tr1 = document.createElement('tr');
     const td1 = document.createElement('td');
     td1.innerHTML = `Price per Year: `;
+    td1.setAttribute('class', 'bold');
     const tdPrice = document.createElement('td');
     tdPrice.setAttribute('id', 'price');
     // Row 2
     const tr2 = document.createElement('tr');
     const td2 = document.createElement('td');
     td2.innerHTML = `Benefits: `;
+    td2.setAttribute('class', 'bold');
     const tdBenefits = document.createElement('td');
     tdBenefits.setAttribute('id', 'benefits');
 

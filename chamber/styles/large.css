@@ -115,17 +115,12 @@
 
     #join-main {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 55% 45%;
         grid-gap: 1rem;
         width: 100%;
     }
 
     #membership-cards.cards-section {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-
         align-content: center;
     }
 
@@ -140,26 +135,8 @@
 @media (min-width: 995px) {
 
     #join-main {
-        display: grid;
         grid-template-columns: 60% 40%;
-        grid-gap: 1rem;
         width: 80%;
-    }
-
-    #membership-cards.cards-section {
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-
-        align-content: center;
-    }
-
-    #membership-cards .card {
-        width: 600px;
-        height: fit-content;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
