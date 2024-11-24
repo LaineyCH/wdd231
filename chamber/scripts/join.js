@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     timestampInput.value = currentDateTime.toISOString();
 });
 
+// remove whitespace from textarea and move cursor to the start
+document.getElementById("description").addEventListener("focus", function () {
+    const textarea = this;
+    textarea.value = textarea.value.trimStart();
+    setTimeout(() => {
+        textarea.setSelectionRange(0, 0);
+    }, 0);
+});
+
 // MODAL
 const membershipInfo = document.querySelector("#membership-info");
 const npCard = document.querySelector("#np-info");

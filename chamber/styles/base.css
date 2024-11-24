@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    min-height: 2000px;
+    min-height: 1000px;
 }
 
 /* --------------------------------------  HEADER AND NAVIGATION ------------------------------------------------ */
@@ -370,10 +370,20 @@ main {
     margin-right: auto;
 }
 
+#results {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#results > h2 {
+    background-color: var(--teal);
+}
+
 /* ----------------------------------------- MEMBERSHIP CARDS ANIMATION ---------------------------------------- */
 @keyframes swoopIn {
     0% {
-        transform: translateX(-200%) scale(0.5) rotate(0deg);
+        transform: translateX(-100%) scale(0.5) rotate(0deg);
         opacity: 0;
     }
     70% {
