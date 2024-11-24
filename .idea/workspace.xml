@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add modal info and card animation">
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/thankyou.js" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add thank you page with results">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chamber/scripts/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/join.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/thankyou.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,15 +111,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="114256000" />
-    </task>
-    <task id="LOCAL-00012" summary="add nav bar animation">
-      <option name="closed" value="true" />
-      <created>1731158430952</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1731158430952</updated>
+      <workItem from="1731733571153" duration="115941000" />
     </task>
     <task id="LOCAL-00013" summary="center buttons">
       <option name="closed" value="true" />
@@ -506,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732446984948</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="add thank you page with results">
+      <option name="closed" value="true" />
+      <created>1732452717100</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1732452717100</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add main min-height" />
     <MESSAGE value="add dummy section" />
     <MESSAGE value="remove dummy section" />
     <MESSAGE value="add blank weather icon" />
@@ -574,6 +572,7 @@
     <MESSAGE value="update form and add modal" />
     <MESSAGE value="update color" />
     <MESSAGE value="add modal info and card animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modal info and card animation" />
+    <MESSAGE value="add thank you page with results" />
+    <option name="LAST_COMMIT_MESSAGE" value="add thank you page with results" />
   </component>
 </project>

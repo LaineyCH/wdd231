@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    min-height: 1000px;
+    min-height: 800px;
 }
 
 /* --------------------------------------  HEADER AND NAVIGATION ------------------------------------------------ */
@@ -215,7 +215,7 @@ main {
 
 #call-to-action {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 20px;
     background-color: var(--sand);
     color: black;
@@ -380,10 +380,16 @@ main {
     background-color: var(--teal);
 }
 
+#results table {
+    border-radius: 15px;
+    border-collapse: separate;
+    overflow: hidden;
+}
+
 /* ----------------------------------------- MEMBERSHIP CARDS ANIMATION ---------------------------------------- */
 @keyframes swoopIn {
     0% {
-        transform: translateX(-100%) scale(0.5) rotate(0deg);
+        transform: translateX(-100%) scale(0.1) rotate(0deg);
         opacity: 0;
     }
     70% {
@@ -399,7 +405,7 @@ main {
     min-height: 50px;
     max-height: fit-content;
     animation-name: swoopIn;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
     animation-iteration-count: 1;
@@ -409,28 +415,26 @@ main {
 /* Add delay for each card to stagger the animation */
 #np-card {
     background-color: var(--sand);
-    animation-delay: 0.2s;
+    animation-delay: 0s;
 }
 
 #bronze-card {
     background-image: linear-gradient(135deg, #cd7f32, #cd7f32, #ba7036, #f8b334, #ba7036, #cd7f32);
     border: 1px solid #8a4a24;
-    animation-delay: 0.4s;
+    animation-delay: 0.15s;
 }
 
 #silver-card {
     background: linear-gradient(135deg, #d4d4d4, #d4d4d4, #bfbfbf, #e8e8e8, #bfbfbf, #d4d4d4);
     border: 1px solid #999;
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 #gold-card {
     background: linear-gradient(135deg, #f7d34d, #f7d34d, #e6b422, #fbdd68, #e6b422, #f7d34d);
     border: 1px solid #b88900;
-    animation-delay: 0.8s;
+    animation-delay: 0.45s;
 }
-
-
 
 /* --------------------------------------------------- TABLES --------------------------------------------------- */
 #table-view {
@@ -754,6 +758,7 @@ dialog button {
     justify-content: center;
     border: none;
     background: white;
+    color: black;
     margin: 0;
     padding: 0.5rem 1rem;
     outline: none;
