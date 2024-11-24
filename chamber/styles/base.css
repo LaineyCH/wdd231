@@ -385,12 +385,6 @@ main {
     background-color: var(--teal);
 }
 
-#results table {
-    border-radius: 15px;
-    border-collapse: separate;
-    overflow: hidden;
-}
-
 /* ----------------------------------------- MEMBERSHIP CARDS ANIMATION ---------------------------------------- */
 @keyframes swoopIn {
     0% {
@@ -447,8 +441,15 @@ main {
     border-collapse: collapse;
 }
 
-tr {
+#results table {
+    border-radius: 11px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+tr, th, td {
     padding: 1rem;
+    border: none;
 }
 
 tr:nth-child(even) {
@@ -458,10 +459,6 @@ tr:nth-child(even) {
 /* Style for even rows */
 tr:nth-child(even) {
     background-color: var(--light-aqua);
-}
-
-th, td {
-    padding: 1rem;
 }
 
 table, thead, tbody, th, td, tr {

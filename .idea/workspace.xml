@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update meta og tags">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update coursework list">
+      <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,31 +107,7 @@
       <workItem from="1730981294814" duration="1792000" />
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
-      <workItem from="1731733571153" duration="118234000" />
-    </task>
-    <task id="LOCAL-00017" summary="add table view and adjust styling">
-      <option name="closed" value="true" />
-      <created>1731342213423</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1731342213423</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add table view and adjust styling">
-      <option name="closed" value="true" />
-      <created>1731342416775</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1731342416775</updated>
-    </task>
-    <task id="LOCAL-00019" summary="remove lazy load from first image">
-      <option name="closed" value="true" />
-      <created>1731342980911</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1731342980911</updated>
+      <workItem from="1731733571153" duration="119203000" />
     </task>
     <task id="LOCAL-00020" summary="add business owner details">
       <option name="closed" value="true" />
@@ -502,7 +477,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732455789237</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="update coursework list">
+      <option name="closed" value="true" />
+      <created>1732456371146</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1732456371146</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update coursework list">
+      <option name="closed" value="true" />
+      <created>1732456498246</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1732456498246</updated>
+    </task>
+    <task id="LOCAL-00068" summary="update coursework list">
+      <option name="closed" value="true" />
+      <created>1732456582683</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1732456582683</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +559,6 @@
     <MESSAGE value="add temple appointment form" />
     <MESSAGE value="remove console.logs" />
     <MESSAGE value="add link to form activity" />
-    <MESSAGE value="update coursework list" />
     <MESSAGE value="add join form" />
     <MESSAGE value="update form and add modal" />
     <MESSAGE value="update color" />
@@ -570,6 +568,7 @@
     <MESSAGE value="remove console logs" />
     <MESSAGE value="update modal colors" />
     <MESSAGE value="update meta og tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="update meta og tags" />
+    <MESSAGE value="update coursework list" />
+    <option name="LAST_COMMIT_MESSAGE" value="update coursework list" />
   </component>
 </project>
