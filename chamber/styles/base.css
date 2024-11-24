@@ -362,6 +362,11 @@ main {
     font-size: 2.5rem;
     font-family: var(--font-page), sans-serif;
 }
+#levels-h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: var(--teal);
+}
 
 #membership-cards {
     display: flex;
@@ -419,7 +424,7 @@ main {
 }
 
 #bronze-card {
-    background-image: linear-gradient(135deg, #cd7f32, #cd7f32, #ba7036, #f8b334, #ba7036, #cd7f32);
+    background-image: linear-gradient(135deg, #fab979, #fab979, #ec9645, #fac77d, #f6a353, #fab979);
     border: 1px solid #8a4a24;
     animation-delay: 0.15s;
 }

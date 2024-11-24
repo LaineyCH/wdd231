@@ -34,6 +34,7 @@ function openMembershipInfo(membership) {
 
     // Add elements for membership description
     const modalH2 = document.createElement('h2');
+    modalH2.style.color = 'black';
     const modalP = document.createElement('p');
     const modalTable = document.createElement('table');
     modalTable.setAttribute('class', 'modal-table');
@@ -57,24 +58,28 @@ function openMembershipInfo(membership) {
             modalP.innerHTML = 'Ideal for non-profit organizations with no membership fee.';
             tdPrice.innerHTML = 'FREE';
             tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire.`;
+            modalH2.style.background = 'var(--sand)';
             break;
         case 'bronze':
             modalH2.innerHTML = 'Bronze Membership';
             modalP.innerHTML = 'Basic membership offering standard benefits for small businesses.';
             tdPrice.innerHTML = `500AED`;
             tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire.`;
+            modalH2.style.background = 'linear-gradient(135deg, #fab979, #fab979, #ec9645, #fac77d, #f6a353, #fab979)';
             break;
         case 'silver':
             modalH2.innerHTML = 'Silver Membership';
             modalP.innerHTML = 'Enhanced membership with additional networking opportunities.';
             tdPrice.innerHTML = '1000AED';
             tdBenefits.innerHTML = `Member Directory Listing. <br> Discounted Table at Summer Faire. <br> Home Page Spotlight.`;
+            modalH2.style.background = 'linear-gradient(135deg, #d4d4d4, #d4d4d4, #bfbfbf, #e8e8e8, #bfbfbf, #d4d4d4)';
             break;
         case 'gold':
             modalH2.innerHTML = 'Gold Membership';
             modalP.innerHTML = 'Premium membership with exclusive perks and maximum visibility.';
             tdPrice.innerHTML = '2000AED';
             tdBenefits.innerHTML = `Member Directory Listing. <br> Free Table at Summer Faire. <br> Home Page Spotlight. Training.`;
+            modalH2.style.background = 'linear-gradient(135deg, #f7d34d, #f7d34d, #e6b422, #fbdd68, #e6b422, #f7d34d)';
             break;
         default:
             modalP.innerHTML = 'Invalid membership type selected.';
