@@ -1,7 +1,7 @@
 // JOIN FORM RESULTS
 
 // thankyou.html?first-name=Elaine&last-name=Henson&org-title=Director&email=elaine%40henson.me.uk&phone=764-837-3456
-// &org-name=Capital+Quilters&membership=np&description=Guild+++&timestamp=2024-11-24T11%3A19%3A32.060Z
+// &org-name=Capital+quilters&membership=np&description=Guild+++&timestamp=2024-11-24T11%3A19%3A32.060Z
 
 const currentUrl = window.location.href;
 

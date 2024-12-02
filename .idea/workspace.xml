@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add wireframes and favicon">
-      <change beforePath="$PROJECT_DIR$/Quilters/styles/site-plan.css" beforeDir="false" afterPath="$PROJECT_DIR$/Quilters/styles/site-plan.css" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update spacing and background color">
+      <change beforePath="$PROJECT_DIR$/Quilters/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/images/capital-quilters-logo-mini.webp" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/images/capital-quilters-logo-mini.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/images/capital-quilters-logo-small.webp" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/images/capital-quilters-logo-small.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/images/capital-quilters-logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/images/capital-quilters-logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/images/cq-wireframe-desktop.webp" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/images/cq-wireframe-desktop.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/images/cq-wireframe-mobile.webp" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/images/cq-wireframe-mobile.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/scripts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/scripts/site-plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/site-plan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/scripts/workshops.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/site-plan.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/site-plan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/styles/site-plan.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/site-plan.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quilters/workshops.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/workshops.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/scripts/thankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/thankyou.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,15 +124,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="14937000" />
-    </task>
-    <task id="LOCAL-00025" summary="add weather card">
-      <option name="closed" value="true" />
-      <created>1731664994028</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1731664994028</updated>
+      <workItem from="1733035190969" duration="15291000" />
     </task>
     <task id="LOCAL-00026" summary="update weather card">
       <option name="closed" value="true" />
@@ -504,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733146518929</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="update spacing and background color">
+      <option name="closed" value="true" />
+      <created>1733147008579</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1733147008579</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add membership to spotlights" />
     <MESSAGE value="update meta og:url" />
     <MESSAGE value="add modal" />
     <MESSAGE value="complete modal" />
@@ -572,6 +585,7 @@
     <MESSAGE value="add quilters site plan" />
     <MESSAGE value="add form basics" />
     <MESSAGE value="add wireframes and favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wireframes and favicon" />
+    <MESSAGE value="update spacing and background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="update spacing and background color" />
   </component>
 </project>
