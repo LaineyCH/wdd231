@@ -61,11 +61,11 @@ h1 {
     padding: 1rem;
 }
 
-#logo-section {
-    padding-bottom: 2rem;
+section {
+    padding-bottom: 1rem;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: var(--camel-light);
 }
 
@@ -94,6 +94,7 @@ h3 {
     color: var(--red);
     font-size: 1.4em;
     text-align: center;
+    background-color: white;
 }
 
 ul #head1,
