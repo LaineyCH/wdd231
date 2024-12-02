@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add form basics">
-      <change afterPath="$PROJECT_DIR$/Quilters/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quilters/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quilters/scripts/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quilters/scripts/workshops.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Quilters/workshops.html" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add wireframes and favicon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quilters/site-plan.html" beforeDir="false" afterPath="$PROJECT_DIR$/Quilters/site-plan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,11 +76,11 @@
       <recent name="$PROJECT_DIR$/chamber/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Quilters" />
+      <recent name="$PROJECT_DIR$/Quilters/images" />
       <recent name="$PROJECT_DIR$/form" />
       <recent name="$PROJECT_DIR$/chamber/scripts" />
       <recent name="$PROJECT_DIR$/chamber/images" />
-      <recent name="$PROJECT_DIR$/chamber" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,15 +110,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="14275000" />
-    </task>
-    <task id="LOCAL-00023" summary="make image path absolute">
-      <option name="closed" value="true" />
-      <created>1731345122136</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1731345122136</updated>
+      <workItem from="1733035190969" duration="14587000" />
     </task>
     <task id="LOCAL-00024" summary="toggle hide class for cards/table">
       <option name="closed" value="true" />
@@ -510,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733141663674</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="add wireframes and favicon">
+      <option name="closed" value="true" />
+      <created>1733146328683</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1733146328683</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update meta tags" />
     <MESSAGE value="add membership to spotlights" />
     <MESSAGE value="update meta og:url" />
     <MESSAGE value="add modal" />
@@ -578,6 +571,7 @@
     <MESSAGE value="remove redundant css" />
     <MESSAGE value="add quilters site plan" />
     <MESSAGE value="add form basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="add form basics" />
+    <MESSAGE value="add wireframes and favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wireframes and favicon" />
   </component>
 </project>
