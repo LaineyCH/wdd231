@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Elaine Henson - Capital Quilters Form">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Capital Quilters Form</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form id="workshop-form">
+            <h1>Join Workshop</h1>
+            <div>
+                <label>Workshop Name:
+                    <input type="text" id="workshop-name" name="workshop-name" readOnly></input></label>
+            </div>
+            <div>
+                <label>Date:
+                    <input type="text" id="workshop-date" name="workshop-date" readOnly></input></label>
+            </div>
+            <div>
+                <label>Time:
+                    <input type="text" id="workshop-time" name="workshop-time" readOnly></input></label>
+            </div>
+            <div>
+                <label>Location:
+                    <input type="text" id="workshop-location" name="workshop-location" readOnly></input></label>
+            </div>
+            <div>
+                <label>Your Name:
+                    <input type="text" id="user-name" name="user-name" required></input></label>
+            </div>
+            <div>
+                <label>Your Email:
+                    <input type="email" id="user-email" name="user-email" required></input></label>
+            </div>
+            <button type="submit">Register for Workshop</button>
+        </form>
+    </main>
+</body>
+<footer>
+    <!--Get current year and display with copyright information-->
+    <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
+        &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
+
+    <!--Get the date that the document was last modified and display-->
+    <p>This webpage was last modified on <span id="lastmodified"></span></p>
+</footer>
+
+</html>
