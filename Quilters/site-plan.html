@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Elaine Henson - Project Site Plan">
+    <meta name="author" content="Elaine Henson">
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <script src="scripts/site-plan.js" defer></script>
+    <title>WDD 131 - Project Site Plan</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
+    <h1>Site Plan</h1>
+</header>
+
+<main>
+    <div id="header-div"></div>
+    <section id="logo-section">
+        <h2>Logo:</h2>
+        <picture>
+            <source srcset="images/capital-quilters-logo.webp" media="(min-width: 768px)" width="1200" height="332">
+            <img id="logo" src="images/capital-quilters-logo-small.webp" width="800" height="365" alt="Capital Quilters Logo">
+        </picture>
+    </section>
+    <section>
+        <h2>Site Name:</h2>
+        <p>This name represents a quilters guild that is based in Abu Dhabi, the capital city of the UAE.</p>
+    </section>
+    <section>
+        <h2>Site Purpose:</h2>
+        <p>This site provides a resource for members of the guild, a place where they can get
+            information about the guild, the workshops and other activities that are available, and as a communication platform.</p>
+    </section>
+    <section id="scenarios">
+        <h2>Scenarios:</h2>
+        <ul>
+            <li>
+                <p>What projects are members currently working on?</p>
+            </li>
+            <li>
+                <p>Where and when does the club meet?</p>
+            </li>
+            <li>
+                <p>What size quilt should I make for a queen size bed?</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Color Schema</h2>
+        <ul id="color-schema">
+            <li>
+                <p id="green">Dark Green: #00843d - Text, backgrounds and other elements.</p>
+            </li>
+            <li>
+                <p id="light-green">Light Green: #e0ffee - backgrounds.</p>
+            </li>
+            <li>
+                <p id="red">Red: #c60101 - text, backgrounds and other elements.</p>
+            </li>
+            <li>
+                <p id="white">White: #ffffff - text and backgrounds.</p>
+            </li>
+            <li>
+                <p id="black">Black: #000000 - text and other elements.</p>
+            </li>
+            <li>
+                <p id="light-camel">Light Camel: #fff2e0 - backgrounds.</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Typography</h2>
+        <ul id="typography">
+            <li>
+                <p id="head1">Header Title Font: Jost</p>
+            </li>
+            <li>
+                <h2>Headings Font: Jost</h2>
+            </li>
+            <li>
+                <h3>Sub-Headings Font: Jost</h3>
+            </li>
+            <li>
+                <p>Body text font: Verdana / Geneva / Tahoma</p>
+            </li>
+        </ul>
+    </section>
+    <section id="wireframes">
+        <h2 id="head-wireframes">Wireframes</h2>
+        <h3 id="head-mobile">Homepage Wireframe for Mobile View</h3>
+        <img id="wireframe-mobile" src="images/wireframe-mobile.webp" alt="home page wireframe for mobile"
+             loading="lazy" width="212" height="800">
+        <h3 id="head-desktop">Homepage Wireframe for Desktop View</h3>
+        <img id="wireframe-desktop" src="images/wireframe-desktop.webp" alt="home page wireframe for desktop"
+             loading="lazy" width="800" height="734">
+    </section>
+    <div id="footer-div"></div>
+</main>
+
+<footer>
+    <!--Get current year and display with copyright information-->
+    <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
+        &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
+
+    <!--Get the date that the document was last modified and display-->
+    <p>This webpage was last modified on <span id="lastmodified"></span></p>
+</footer>
+</body>
+
+</html>
