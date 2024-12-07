@@ -805,6 +805,10 @@ dialog button:hover {
     min-height: 90px;
 }
 
+#visit-card h3 {
+    padding-bottom: 1rem;
+}
+
 aside {
     display: flex;
     flex-direction: column;
