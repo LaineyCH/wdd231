@@ -127,6 +127,12 @@
         padding-left: 0.5rem;
     }
 
+    /* Display the 8th card */
+    #photo-cards .card:nth-child(8) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .hover {
         transition: transform 0.3s ease; /* Smooth transition */
     }
@@ -193,8 +199,8 @@
         flex-direction: column;
     }
 
-    /* Display the 7th card and onwards */
-    #photo-cards .card:nth-child(n+7) {
+    /* Display the 9th card and onwards */
+    #photo-cards .card:nth-child(n+9) {
         display: flex;
         flex-direction: column;
     }

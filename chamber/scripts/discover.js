@@ -25,8 +25,6 @@ function displayPhotoCards() {
 
     // randomly shuffle the list of photos
     const shuffledPhotos = photos.sort(() => 0.5 - Math.random());
-    // select the first 6 photos
-    //const selectedPhotos = shuffledPhotos.slice(0, 3);
 
     shuffledPhotos.forEach((photo, index) => {
         // create html elements
