@@ -800,6 +800,7 @@ dialog button:hover {
 
 #visit-card {
     padding: 1rem;
+    background-color: var(--light-aqua);
     border: 1px solid var(--teal);
     text-align: center;
     min-height: 90px;
