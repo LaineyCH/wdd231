@@ -292,6 +292,7 @@ main {
     max-width: 400px;
     min-height: 300px;
     flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #membership-cards {
@@ -367,6 +368,10 @@ main {
 /* Hide the 7th card and onwards */
 #photo-cards .card:nth-child(n+7) {
     display: none;
+}
+
+.caption {
+    padding: 0 1rem 1rem 1rem;
 }
 
 .offer {
@@ -786,6 +791,56 @@ dialog button:hover {
     background-color: white;
 }
 
+/* ------------------------------------------  DISCOVER PAGE  ----------------=------------------------ */
+
+#discover-h2 {
+    padding-top: 1rem;
+}
+
+#discover-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#visit-card {
+    padding: 1rem;
+    border: 1px solid var(--teal);
+    text-align: center;
+    min-height: 90px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-card {
+    background-color: white;
+    border: 1px solid var(--teal);
+    padding: 1rem;
+}
+
+.aside-card h3 {
+    background-color: var(--teal); /* Card header background */
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem; /* Extend header to card edges */
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.discover-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.discover-list li {
+    margin-bottom: 0.5rem;
+}
+
 /* ----------------------------------------------  FOOTER  -------------------------------------------- */
 footer {
     grid-row: 3 / 4;
@@ -811,7 +866,7 @@ footer {
     display: Inline-block;
 }
 
-/* ------------------------  Formatting for large view ports above 377px wide  ------------------------- */
+/* ------------------------  Formatting for view ports above 377px wide  ------------------------- */
 @media (min-width: 377px) {
     #heading-1 {
         font-size: 1.8rem;

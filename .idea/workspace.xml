@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update site purpose">
-      <change afterPath="$PROJECT_DIR$/chamber/data/photos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chamber/scripts/discover.js" afterDir="false" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add discover page and photos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/data/photos.json" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/data/photos.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/discover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chamber/scripts/discover.js" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/scripts/discover.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chamber/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/chamber/styles/large.css" afterDir="false" />
     </list>
@@ -115,15 +115,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="22354000" />
-    </task>
-    <task id="LOCAL-00029" summary="add hover effect to call to action button">
-      <option name="closed" value="true" />
-      <created>1731862222626</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1731862222626</updated>
+      <workItem from="1733035190969" duration="30267000" />
     </task>
     <task id="LOCAL-00030" summary="add forecast api">
       <option name="closed" value="true" />
@@ -509,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733147683833</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add discover page and photos">
+      <option name="closed" value="true" />
+      <created>1733576232639</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1733576232639</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="complete modal" />
     <MESSAGE value="add animation" />
     <MESSAGE value="add rainbow animation" />
     <MESSAGE value="update rainbow colours" />
@@ -577,6 +576,7 @@
     <MESSAGE value="update spacing and background color" />
     <MESSAGE value="update quilters folder name" />
     <MESSAGE value="update site purpose" />
-    <option name="LAST_COMMIT_MESSAGE" value="update site purpose" />
+    <MESSAGE value="add discover page and photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add discover page and photos" />
   </component>
 </project>
