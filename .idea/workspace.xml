@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update images">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="delete unused images">
+      <change afterPath="$PROJECT_DIR$/quilters/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/resources.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/scripts/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/styles/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "JavaScript Debug.directory.html.executor": "Run",
     "JavaScript Debug.discover.html.executor": "Run",
+    "JavaScript Debug.form.html.executor": "Run",
     "JavaScript Debug.home.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.join.html.executor": "Run",
@@ -110,23 +118,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="33655000" />
-    </task>
-    <task id="LOCAL-00039" summary="update weather forecast">
-      <option name="closed" value="true" />
-      <created>1732189683693</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1732189683693</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add spotlights">
-      <option name="closed" value="true" />
-      <created>1732195280098</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1732195280098</updated>
+      <workItem from="1733035190969" duration="37241000" />
     </task>
     <task id="LOCAL-00041" summary="fix weather tables">
       <option name="closed" value="true" />
@@ -504,7 +496,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733587292926</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="update images">
+      <option name="closed" value="true" />
+      <created>1733587847743</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1733587847743</updated>
+    </task>
+    <task id="LOCAL-00089" summary="delete unused images">
+      <option name="closed" value="true" />
+      <created>1733588520968</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1733588520968</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update color" />
     <MESSAGE value="add modal info and card animation" />
     <MESSAGE value="add thank you page with results" />
     <MESSAGE value="update formatting" />
@@ -572,6 +579,7 @@
     <MESSAGE value="Change order of lazy loading atr" />
     <MESSAGE value="update visit card color" />
     <MESSAGE value="update images" />
-    <option name="LAST_COMMIT_MESSAGE" value="update images" />
+    <MESSAGE value="delete unused images" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unused images" />
   </component>
 </project>
