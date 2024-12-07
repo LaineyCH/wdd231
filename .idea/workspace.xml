@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="adjust number of displayed images on discover page" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="Fix typo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,31 +108,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="31572000" />
-    </task>
-    <task id="LOCAL-00032" summary="add main min-height">
-      <option name="closed" value="true" />
-      <created>1732166475187</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1732166475187</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add main min-height">
-      <option name="closed" value="true" />
-      <created>1732169624698</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1732169624698</updated>
-    </task>
-    <task id="LOCAL-00034" summary="add dummy section">
-      <option name="closed" value="true" />
-      <created>1732170774514</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1732170774514</updated>
+      <workItem from="1733035190969" duration="32007000" />
     </task>
     <task id="LOCAL-00035" summary="remove dummy section">
       <option name="closed" value="true" />
@@ -502,7 +478,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733585284038</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="adjust visit card h3 padding">
+      <option name="closed" value="true" />
+      <created>1733585619268</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1733585619268</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Add discover page link to course list on course home page">
+      <option name="closed" value="true" />
+      <created>1733585723404</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1733585723404</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Fix typo">
+      <option name="closed" value="true" />
+      <created>1733585806806</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1733585806806</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,9 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update rainbow colours" />
-    <MESSAGE value="add temple appointment form" />
-    <MESSAGE value="remove console.logs" />
     <MESSAGE value="add link to form activity" />
     <MESSAGE value="add join form" />
     <MESSAGE value="update form and add modal" />
@@ -570,6 +567,9 @@
     <MESSAGE value="add discover page and photos" />
     <MESSAGE value="update discover page" />
     <MESSAGE value="adjust number of displayed images on discover page" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust number of displayed images on discover page" />
+    <MESSAGE value="adjust visit card h3 padding" />
+    <MESSAGE value="Add discover page link to course list on course home page" />
+    <MESSAGE value="Fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo" />
   </component>
 </project>

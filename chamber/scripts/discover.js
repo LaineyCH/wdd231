@@ -36,13 +36,13 @@ function displayPhotoCards() {
         card.setAttribute('class', 'card');
         image.setAttribute('class', 'hover');
         image.setAttribute('src', `images/${photo.imagefile}`);
-        image.setAttribute('alt', `Photo of ${photo.name}`);
         // Only add lazy loading for images after the first one
         if (index !== 0) {
             image.setAttribute('loading', 'lazy');
         }
         image.setAttribute('width', '500');
         image.setAttribute('height', '500');
+        image.setAttribute('alt', `Photo of ${photo.name}`);
         caption.textContent = photo.caption;
         caption.setAttribute('class', 'caption');
 
