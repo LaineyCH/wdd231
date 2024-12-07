@@ -1,0 +1,88 @@
+{
+  "photos": [
+    {
+      "name": "The City of Lights",
+      "caption": "Know as the City of Lights, this is a central business hub in Al Reem",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-01.webp"
+    },
+    {
+      "name": "Al Reem at Night",
+      "caption": "Al Reem at night, featuring the bridged Gate Towers, and the tall Sun Towers",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-02.webp"
+    },
+    {
+      "name": "The Mangroves at sunrise",
+      "caption": "The beautiful Mangroves are a central feature of Al Reem Island",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-03.webp"
+    },
+    {
+      "name": "Kayaks on the beach",
+      "caption": "The beach and mangroves provide many business opportunities, from kayaking and other water sports, to food trucks and other services.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-04.webp"
+    },
+    {
+      "name": "Water Craft Lit up at Night",
+      "caption": "There is an amazing night life in Al Reem, with the beach and mangroves offering many business opportunities.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-05.webp"
+    },
+    {
+      "name": "Al Maryah Island",
+      "caption": "Just across the water is Al Maryah Island, with great links to Al Reem",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-06.webp"
+    },
+    {
+      "name": "Sunset over Al Reem and Al Maryah Islands",
+      "caption": "Sunset over Al Reem and Al Maryah Islands. New development just behind the mangroves offers many new business opportunities.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-07.webp"
+    },
+    {
+      "name": "Racing Indoors at Reem Mall",
+      "caption": "The large Reem Mall makes for the perfect venue for many community events, especially in the hot summer months.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-08.webp"
+    },
+    {
+      "name": "Fireworks over Al Maryah",
+      "caption": "We enjoy amazing fireworks displays over Al Maryah about 4 times a year.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-09.webp"
+    },
+    {
+      "name": "Camels in the Desert",
+      "caption": "With the desert so nearby, there is a great demand for Safaris and Dune Bashing.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-010.webp"
+    },
+    {
+      "name": "The Mangroves with Buildings in the Background",
+      "caption": "The beautiful Mangroves and their wildlife are a central feature of Al Reem Island.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-011.webp"
+    },
+    {
+      "name": "Al Reem Canal at Night",
+      "caption": "The canals meander all around the northern sector of Al Reem Island.",
+      "width": 600,
+      "height": 450,
+      "imageurl": "https://laineych.github.io/wdd231/chamber/images/al-reem-012.webp"
+    }
+  ]
+}

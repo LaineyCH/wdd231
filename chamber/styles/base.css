@@ -359,8 +359,14 @@ main {
     background-color: white;
 }
 
+/* Hide the third card */
 #spotlight-cards.cards-section .card:nth-child(3) {
-    display: none; /* Hides the third card */
+    display: none;
+}
+
+/* Hide the 7th card and onwards */
+#photo-cards .card:nth-child(n+7) {
+    display: none;
 }
 
 .offer {
