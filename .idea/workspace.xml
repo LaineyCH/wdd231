@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="edit workshops" />
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add debugging">
+      <change afterPath="$PROJECT_DIR$/quilters/scripts/thankyou.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/thankyou.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/workshop-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/data/workshops.json" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/data/workshops.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/resources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/scripts/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshop-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/scripts/workshops.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/workshops.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/workshops.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +63,7 @@
     "JavaScript Debug.modules.html.executor": "Run",
     "JavaScript Debug.prophets.html.executor": "Run",
     "JavaScript Debug.site-plan.html.executor": "Run",
+    "JavaScript Debug.thankyou.html.executor": "Run",
     "JavaScript Debug.weather-test.html.executor": "Run",
     "JavaScript Debug.weather.html.executor": "Run",
     "JavaScript Debug.workshops.html.executor": "Run",
@@ -57,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ehenson/WebstormProjects/wdd231/quilters/images",
+    "last_opened_file_path": "/Users/ehenson/WebstormProjects/wdd231/quilters/scripts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +85,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quilters/scripts" />
       <recent name="$PROJECT_DIR$/quilters/images" />
       <recent name="$PROJECT_DIR$/chamber/scripts" />
       <recent name="$PROJECT_DIR$/chamber" />
@@ -110,23 +126,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="50678000" />
-    </task>
-    <task id="LOCAL-00045" summary="update meta og:url">
-      <option name="closed" value="true" />
-      <created>1732200146318</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1732200146318</updated>
-    </task>
-    <task id="LOCAL-00046" summary="add modal">
-      <option name="closed" value="true" />
-      <created>1732293864154</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1732293864154</updated>
+      <workItem from="1733035190969" duration="56513000" />
     </task>
     <task id="LOCAL-00047" summary="complete modal">
       <option name="closed" value="true" />
@@ -504,7 +504,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733663622249</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="edit workshops">
+      <option name="closed" value="true" />
+      <created>1733663805019</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1733663805019</updated>
+    </task>
+    <task id="LOCAL-00095" summary="add debugging">
+      <option name="closed" value="true" />
+      <created>1733663911956</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1733663911956</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update modal colors" />
     <MESSAGE value="update meta og tags" />
     <MESSAGE value="update coursework list" />
     <MESSAGE value="update table borders" />
@@ -572,6 +587,7 @@
     <MESSAGE value="adjust nav bar" />
     <MESSAGE value="add workshops" />
     <MESSAGE value="edit workshops" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit workshops" />
+    <MESSAGE value="add debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="add debugging" />
   </component>
 </project>

@@ -93,34 +93,28 @@ function generate_workshop_cards(filterPhrase) {
 
     const htmlWorkshops = filteredWorkshops.map((workshop, index) => {
             return index < 2
-                ? `<a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
-                <div class="workshop-card">
-                    <div class="workshop-info">
-                        <h3>${workshop.name}</h3>
-                        <p>${workshop.description}</p>
-                        <p>Designer:<br>${workshop.designer}</p>
-                    </div>
+                ? `<section class="workshop-card">
+                    <h3>${workshop.name}</h3>
+                    <p>${workshop.description}</p>
+                    <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
+                        <p>Pattern:<br>${workshop.designer}</p></a>
                     <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" width="${workshop.imgWidth}">
                     <p>Date: ${workshop.date}</p>
                     <p>Time: ${workshop.time}</p>
                     <p>Location: ${workshop.location}</p>
                     <button onclick="joinWorkshop(${index})">Join Workshop</button>                    
-                </div>
-            </a>`
-                : `<a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
-                <div class="workshop-card">
-                    <div class="workshop-info">
-                        <h3>${workshop.name}</h3>
-                        <p>${workshop.description}</p>
-                        <p>Designer:<br>${workshop.designer}</p>
-                    </div>
+                </section>`
+                : `<section class="workshop-card">
+                    <h3>${workshop.name}</h3>
+                    <p>${workshop.description}</p>
+                    <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
+                        <p>Pattern:<br>${workshop.designer}</p></a>
                     <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" loading="lazy" width="${workshop.imgWidth}">
                     <p>Date: ${workshop.date}</p>
                     <p>Time: ${workshop.time}</p>
                     <p>Location: ${workshop.location}</p>
                     <button onclick="joinWorkshop(${index})">Join Workshop</button>
-                </div>
-            </a>`
+                </section>`
         }
     );
     workshopsContainer.innerHTML = htmlWorkshops.join('');
@@ -158,36 +152,5 @@ function joinWorkshop(index) {
     localStorage.setItem("selectedWorkshop", JSON.stringify(selectedWorkshop));
 
     // Redirect to the form page
-    window.location.href = "form.html";
+    window.location.href = "workshop-form.html";
 }
-
-
-
-// const workshops2 = [
-//     {
-//         name: "Zip It Up",
-//         date: "2024-12-10",
-//         time: "9:00 AM - 3:00 PM",
-//         location: "Linda's Red Room"
-//     },
-//     {
-//         name: "Japanese Box Pouch",
-//         date: "2024-12-12",
-//         time: "10:00 AM - 5:00 PM",
-//         location: "The Club"
-//     },
-// ];
-
-// workshops2.forEach((workshop, index) => {
-//     const workshopDiv = document.createElement("div");
-//     workshopDiv.innerHTML = `
-//         <h2>${workshop.name}</h2>
-//         <p>Date: ${workshop.date}</p>
-//         <p>Time: ${workshop.time}</p>
-//         <p>Location: ${workshop.location}</p>
-//         <button onclick="joinWorkshop(${index})">Join Workshop</button>
-//     `;
-//     workshopsContainer.appendChild(workshopDiv);
-// });
-
-//---------------------------------------------------------------------------------------------
