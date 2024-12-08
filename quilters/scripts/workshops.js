@@ -36,27 +36,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function changeActive(activePhrase) {
     // change active class on nav buttons
-    allButton.classList.remove('active');
-    quiltButton.classList.remove('active');
-    bagButton.classList.remove('active');
-    dressButton.classList.remove('active');
-    decorButton.classList.remove('active');
+    allButton.classList.remove('active-filter');
+    quiltButton.classList.remove('active-filter');
+    bagButton.classList.remove('active-filter');
+    dressButton.classList.remove('active-filter');
+    decorButton.classList.remove('active-filter');
 
     switch (activePhrase) {
         case "all":
-            allButton.classList.add('active');
+            allButton.classList.add('active-filter');
             break;
         case "quilt":
-            quiltButton.classList.add('active');
+            quiltButton.classList.add('active-filter');
             break;
         case "bag":
-            bagButton.classList.add('active');
+            bagButton.classList.add('active-filter');
             break;
         case "dress":
-            dressButton.classList.add('active');
+            dressButton.classList.add('active-filter');
             break;
         case "decor":
-            decorButton.classList.add('active');
+            decorButton.classList.add('active-filter');
             break;
         default:
     }
@@ -92,28 +92,33 @@ function generate_workshop_cards(filterPhrase) {
     changeActive(filterPhrase);
 
     const htmlWorkshops = filteredWorkshops.map((workshop, index) => {
-            return index < 2
+            return index < 5
                 ? `<section class="workshop-card">
                     <h3>${workshop.name}</h3>
                     <p>${workshop.description}</p>
-                    <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
-                        <p>Pattern:<br>${workshop.designer}</p></a>
-                    <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" width="${workshop.imgWidth}">
                     <p>Date: ${workshop.date}</p>
                     <p>Time: ${workshop.time}</p>
                     <p>Location: ${workshop.location}</p>
-                    <button onclick="joinWorkshop(${index})">Join Workshop</button>                    
+                    <button onclick="joinWorkshop(${index})">Join Workshop</button>  
+                    <div id="ws-img-box">
+                        <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" width="${workshop.imgWidth}">
+                    
+                        <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
+                            <p>Pattern: ${workshop.designer}</p></a>        
+                    </div>    
                 </section>`
                 : `<section class="workshop-card">
                     <h3>${workshop.name}</h3>
                     <p>${workshop.description}</p>
-                    <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
-                        <p>Pattern:<br>${workshop.designer}</p></a>
-                    <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" loading="lazy" width="${workshop.imgWidth}">
                     <p>Date: ${workshop.date}</p>
                     <p>Time: ${workshop.time}</p>
                     <p>Location: ${workshop.location}</p>
                     <button onclick="joinWorkshop(${index})">Join Workshop</button>
+                    <div id="ws-img-box">
+                        <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" loading="lazy" width="${workshop.imgWidth}">
+                        <a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
+                            <p>Pattern: ${workshop.designer}</p></a>
+                    </div>
                 </section>`
         }
     );

@@ -34,31 +34,36 @@ function formatTimestamp(timestamp) {
 
 const showInfo = document.querySelector('#results');
 showInfo.innerHTML = `
-<h2>Thank you for registering for the ${show("workshop-name")} workshop!</h2>
-<table>
-<tr>
-    <td>Registration for:</td>
-    <td>${show("first-name")} ${show("last-name")}</td>
-</tr>
-<tr>
-    <td>Your email address:</td>
-    <td><a href="mailto:${show("user-email")}?subject=My%20Registration%20For%20the%20${show("workshop-name")}%20Workshop">${show("user-email")}</a></td>
-</tr>
-<tr>
-    <td>Workshop name:</td>
-    <td>${show("workshop-name")}</td>
-</tr>
-<tr>
-    <td>Date & Time of workshop:</td>
-    <td>${show("workshop-date")}, ${show("workshop-time")}</td>
-</tr>
-<tr>
-    <td>Location of workshop:</td>
-    <td>${show("workshop-location")}</td>
-</tr>
-<tr>
-    <td>Date of registration:</td>
-    <td>${formatTimestamp(show('timestamp'))}</td>
-</tr>
-</table>
-`
+    <h2>Thank you for registering for the ${show("workshop-name")} workshop!</h2>
+    <table>
+    <tr>
+        <td>Registration for:</td>
+        <td>${show("first-name")} ${show("last-name")}</td>
+    </tr>
+    <tr>
+        <td>Your email address:</td>
+        <td><a href="mailto:${show("user-email")}?subject=My%20Registration%20For%20the%20${show("workshop-name")}%20Workshop">${show("user-email")}</a></td>
+    </tr>
+    <tr>
+        <td>Workshop name:</td>
+        <td>${show("workshop-name")}</td>
+    </tr>
+    <tr>
+        <td>Date & Time of workshop:</td>
+        <td>${show("workshop-date")}, ${show("workshop-time")}</td>
+    </tr>
+    <tr>
+        <td>Location of workshop:</td>
+        <td>${show("workshop-location")}</td>
+    </tr>
+    <tr>
+        <td>Date of registration:</td>
+        <td>${formatTimestamp(show('timestamp'))}</td>
+    </tr>
+    </table>`
+
+
+document.getElementById("print-button").addEventListener("click", function () {
+    window.print();
+});
+

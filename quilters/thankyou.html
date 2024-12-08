@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Elaine Henson - Project - Capital Quilters Thank you Page">
+    <meta name="description" content="WDD 231 - Elaine Henson - Project - Capital Quilters Thank You Page">
     <meta name="author" content="Elaine Henson">
-    <title>Capital QuiltersThank you Page</title>
+    <title>Capital Quilters Thank You Page</title>
 
     <!-- Social Media META Tags -->
     <meta property="og:title" content="Capital Quilters Home Page">
@@ -32,13 +32,15 @@
 <body>
 <header>
     <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
+    <h1 class="print-heading">Capital Quilters</h1>
     <!--navigation-->
     <nav class="nav-bar">
         <a href="index.html">Home</a>
         <a href="workshops.html">Workshops</a>
         <a href="resources.html">Resources</a>
     </nav>
-    <button id="join-button" class="bold">Join Guild!</button>
+    <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
+     'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
     <!--button for hamburger menu, to be visible only on mobile view-->
     <button id="ham-button" aria-label="menu"></button>
 </header>
@@ -46,6 +48,7 @@
 <main>
     <div id="header-stripe"></div>
     <section id="results" class="card"></section>
+    <button id="print-button" class="bold">Print Your Details</button>
 </main>
 
 <footer>
