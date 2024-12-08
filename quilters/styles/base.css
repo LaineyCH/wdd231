@@ -5,7 +5,7 @@
     /* colors */
     --red: #c60101;
     --camel: #975C26;
-    --camel-light: #fff2e0;
+    --camel-light: #f4edd8;
     --green: #007a38;
     --green-light: #ecf8f2;
 }
@@ -24,6 +24,7 @@ main {
 
 h1, h2, h3 {
     font-family: var(--font-heading), sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -49,11 +50,11 @@ h3 {
 
 header {
     background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
     display: flex;
-    justify-content: start;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
 }
 
 #logo-mini, #logo {
@@ -66,8 +67,7 @@ header {
 #logo-mini {
     max-width: 80px;
     height: auto;
-    position: absolute;
-    left: 20px;
+    padding-left: 1rem;
 }
 
 #logo {
@@ -83,6 +83,13 @@ header {
     border-bottom: 8px dashed var(--red);
 }
 
+#join-button {
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    background-color: var(--camel-light);
+}
+
 /* --------------------------------------------- NAVIGATION -------------------------------------------- */
 
 /* hamburger button */
@@ -91,9 +98,6 @@ header {
     border: 0;
     background: none;
     color: black;
-    position: absolute;
-    right: 20px;
-    top: 10px;
 }
 
 /* appearance for the hamburger menu button when open class is off */
@@ -155,6 +159,71 @@ nav a:hover {
 .active::after {
     content: ">";
     padding-left: 1rem;
+}
+
+/* ------------------------------------------- HOME PAGE ------------------------------------------- */
+
+#hero {
+    position: relative;
+}
+
+#hero > h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------- WORKSHOPS PAGE ----------------------------------------- */
+
+
+.workshop-button {
+    font-family: var(--font-heading), serif;
+    background-color: var(--red);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#buttons {
+    display: flex;
+    width: 100%;
+}
+
+.workshop-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    border: 4px solid var(--turq-dark);
+    height: 95%;
+}
+
+a.workshop-link {
+    text-decoration: none;
+    color: black;
+}
+
+a.workshop-link:hover {
+    background: none;
+    font-weight: 400;
+}
+
+.workshop-img {
+    width: 100%;
+    border: 6px solid white;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+}
+
+.active {
+    font-weight: 900;
+    background-color: var(--camel-light);
 }
 
 /* --------------------------------------------- FOOTER -------------------------------------------- */

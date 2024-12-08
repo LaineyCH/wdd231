@@ -31,10 +31,10 @@ function changeActiveNav(activePhrase) {
             homeButton.classList.add('active');
             break;
         case "Capital Quilters Workshops Page":
-            dirButton.classList.add('active');
+            wsButton.classList.add('active');
             break;
         case "Capital Quilters Resources Page":
-            joinButton.classList.add('active');
+            resButton.classList.add('active');
             break;
         default:
     }

@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 - Elaine Henson - Capital Quilters Workshops">
+    <meta name="description" content="WDD 231 - Elaine Henson - Project - Capital Quilters Workshops Page">
     <meta name="author" content="Elaine Henson">
-    <link rel="stylesheet" href="styles/site-plan.css">
-    <script src="scripts/workshops.js" defer></script>
-    <title>Capital Quilters Workshops</title>
+    <title>Capital Quilters Workshops Page</title>
 
+    <!-- Social Media META Tags -->
+    <meta property="og:title" content="Capital Quilters Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://laineych.github.io/wdd231/quilters/images/caapital-quilters-logo-small.webp">
+    <meta property="og:url" content="https://laineych.github.io/wdd231/quilters">
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- SCRIPTS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/workshops.js" defer></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="favicon.ico">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +30,35 @@
 </head>
 
 <body>
+<header>
+    <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
+    <!--navigation-->
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="resources.html">Resources</a>
+    </nav>
+    <button id="join-button" class="bold">Join Guild!</button>
+    <!--button for hamburger menu, to be visible only on mobile view-->
+    <button id="ham-button" aria-label="menu"></button>
+
+</header>
+
 <main>
-    <div id="workshops-container"></div>
+    <div id="header-div"></div>
+    <section>
+        <section id="buttons">
+            <button id="all-button" class="workshop-button">All Workshops</button>
+            <button id="quilt-button" class="workshop-button">Quilting Workshops</button>
+            <button id="bag-button" class="workshop-button">Bag Workshops</button>
+            <button id="dress-button" class="workshop-button">Dressmaking Workshops</button>
+            <button id="decor-button" class="workshop-button">Decorative Workshops</button>
+        </section>
+        <h2 id="workshops-heading"></h2>
+        <section id="workshops-container"></section>
+    </section>
 </main>
-</body>
+
 <footer>
     <!--Get current year and display with copyright information-->
     <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
@@ -29,5 +67,6 @@
     <!--Get the date that the document was last modified and display-->
     <p>This webpage was last modified on <span id="lastmodified"></span></p>
 </footer>
+</body>
 
 </html>

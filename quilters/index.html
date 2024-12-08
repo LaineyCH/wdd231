@@ -31,20 +31,28 @@
 <body>
 <header>
     <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
-    <!--button for hamburger menu, to be visible only on mobile view-->
-    <button id="ham-button" aria-label="menu"></button>
     <!--navigation-->
     <nav class="nav-bar">
         <a href="index.html">Home</a>
         <a href="workshops.html">Workshops</a>
         <a href="resources.html">Resources</a>
     </nav>
+    <button id="join-button" class="bold">Join Guild!</button>
+    <!--button for hamburger menu, to be visible only on mobile view-->
+    <button id="ham-button" aria-label="menu"></button>
+
 </header>
 
 <main>
     <div id="header-div"></div>
-
-    <div id="footer-div"></div>
+    <section id="hero">
+        <h2>Welcome to</h2>
+        <picture>
+            <source srcset="images/capital-quilters-logo.webp" media="(min-width: 768px)" width="1200" height="332">
+            <img id="logo" src="images/capital-quilters-logo-small.webp" width="800" height="365" alt="Capital Quilters Logo">
+        </picture>
+        <div id="footer-div"></div>
+    </section>
 </main>
 
 <footer>

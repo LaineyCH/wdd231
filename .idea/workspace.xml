@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add capital quilters pages, styles and scripts">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="adjust nav bar">
+      <change afterPath="$PROJECT_DIR$/quilters/data/workshops.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/amberley-dress.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/bird.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/box-pouch.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/camel-block.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/group.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/hexie-pad.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/leather-bag.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/orchidee-blouse.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/quilt.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/roo-pouch.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/rope-bowl.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quilters/images/star-block.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/scripts/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/scripts/workshops.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshops.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/workshops.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/workshops.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +78,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ehenson/WebstormProjects/wdd231/chamber/scripts",
+    "last_opened_file_path": "/Users/ehenson/WebstormProjects/wdd231/quilters/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +91,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quilters/images" />
       <recent name="$PROJECT_DIR$/chamber/scripts" />
       <recent name="$PROJECT_DIR$/chamber" />
       <recent name="$PROJECT_DIR$/chamber/styles" />
@@ -113,15 +131,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="39178000" />
-    </task>
-    <task id="LOCAL-00042" summary="change call to action colors">
-      <option name="closed" value="true" />
-      <created>1732197000543</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1732197000543</updated>
+      <workItem from="1733035190969" duration="48302000" />
     </task>
     <task id="LOCAL-00043" summary="update meta tags">
       <option name="closed" value="true" />
@@ -507,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733595996601</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="adjust nav bar">
+      <option name="closed" value="true" />
+      <created>1733631464458</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1733631464458</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add thank you page with results" />
     <MESSAGE value="update formatting" />
     <MESSAGE value="remove console logs" />
     <MESSAGE value="update modal colors" />
@@ -575,6 +592,7 @@
     <MESSAGE value="update images" />
     <MESSAGE value="delete unused images" />
     <MESSAGE value="add capital quilters pages, styles and scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add capital quilters pages, styles and scripts" />
+    <MESSAGE value="adjust nav bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust nav bar" />
   </component>
 </project>
