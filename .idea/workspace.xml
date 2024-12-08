@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add workshops">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/scripts/workshops.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
-    </list>
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="edit workshops" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,15 +110,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="50295000" />
-    </task>
-    <task id="LOCAL-00044" summary="add membership to spotlights">
-      <option name="closed" value="true" />
-      <created>1732198890924</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1732198890924</updated>
+      <workItem from="1733035190969" duration="50678000" />
     </task>
     <task id="LOCAL-00045" summary="update meta og:url">
       <option name="closed" value="true" />
@@ -509,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733658719162</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="edit workshops">
+      <option name="closed" value="true" />
+      <created>1733663622249</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1733663622249</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove console logs" />
     <MESSAGE value="update modal colors" />
     <MESSAGE value="update meta og tags" />
     <MESSAGE value="update coursework list" />
@@ -577,6 +571,7 @@
     <MESSAGE value="add capital quilters pages, styles and scripts" />
     <MESSAGE value="adjust nav bar" />
     <MESSAGE value="add workshops" />
-    <option name="LAST_COMMIT_MESSAGE" value="add workshops" />
+    <MESSAGE value="edit workshops" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit workshops" />
   </component>
 </project>
