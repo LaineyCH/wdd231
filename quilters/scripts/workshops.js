@@ -87,8 +87,10 @@ function generate_workshop_cards(filterPhrase) {
         default:
             filteredWorkshops = workshops;
             workshopsHeading.textContent = "All Workshops";
-    };
+    }
+
     changeActive(filterPhrase);
+
     const htmlWorkshops = filteredWorkshops.map((workshop, index) => {
             return index < 2
                 ? `<a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
@@ -96,9 +98,13 @@ function generate_workshop_cards(filterPhrase) {
                     <div class="workshop-info">
                         <h3>${workshop.name}</h3>
                         <p>${workshop.description}</p>
+                        <p>Designer:<br>${workshop.designer}</p>
                     </div>
                     <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" width="${workshop.imgWidth}">
-                    <p>Designer:<br>${workshop.designer}</p>
+                    <p>Date: ${workshop.date}</p>
+                    <p>Time: ${workshop.time}</p>
+                    <p>Location: ${workshop.location}</p>
+                    <button onclick="joinWorkshop(${index})">Join Workshop</button>                    
                 </div>
             </a>`
                 : `<a class="workshop-link" href="${workshop.workshopUrl}" target="_blank">
@@ -106,9 +112,13 @@ function generate_workshop_cards(filterPhrase) {
                     <div class="workshop-info">
                         <h3>${workshop.name}</h3>
                         <p>${workshop.description}</p>
+                        <p>Designer:<br>${workshop.designer}</p>
                     </div>
                     <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" loading="lazy" width="${workshop.imgWidth}">
-                    <p>Designer:<br>${workshop.designer}</p>
+                    <p>Date: ${workshop.date}</p>
+                    <p>Time: ${workshop.time}</p>
+                    <p>Location: ${workshop.location}</p>
+                    <button onclick="joinWorkshop(${index})">Join Workshop</button>
                 </div>
             </a>`
         }
@@ -143,11 +153,14 @@ decorButton.addEventListener('click', () => {
 
 function joinWorkshop(index) {
     // Save workshop details to localStorage
-    localStorage.setItem("selectedWorkshop", JSON.stringify(workshops[index]));
+    const selectedWorkshop = workshops[index];
+    console.log("Selected Workshop:", selectedWorkshop); // Debugging line
+    localStorage.setItem("selectedWorkshop", JSON.stringify(selectedWorkshop));
 
     // Redirect to the form page
     window.location.href = "form.html";
 }
+
 
 
 // const workshops2 = [

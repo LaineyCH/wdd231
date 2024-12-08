@@ -201,7 +201,7 @@ nav a:hover {
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
-    border: 4px solid var(--turq-dark);
+    border: 4px solid var(--green);
     height: 95%;
 }
 
