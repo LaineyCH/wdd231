@@ -22,53 +22,6 @@ main {
     min-height: 800px;
 }
 
-/* --------------------------------------------- HEADER -------------------------------------------- */
-
-header {
-    background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-
-}
-
-#header-div {
-    background-color: white;
-    border-bottom: 8px dashed var(--red);
-}
-
-#logo-mini, #logo {
-    border: none;
-    background-color: white;
-    box-shadow: none;
-    margin: 0;
-}
-
-#logo-mini {
-    max-width: 80px;
-    height: auto;
-    position: absolute;
-    left: 20px;
-}
-
-h1 {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    text-align: center;
-}
-
-#logo {
-    display: block; /* Ensures it's treated as a block element */
-    margin: 0 auto; /* Centers the image horizontally */
-    max-width: 80%; /* Adjust the size to prevent overflow */
-    height: auto;
-    padding: 1rem;
-}
-
 h1, h2, h3 {
     font-family: var(--font-heading), sans-serif;
 }
@@ -92,15 +45,55 @@ h3 {
     background-color: white;
 }
 
+/* --------------------------------------------- HEADER -------------------------------------------- */
+
+header {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+#logo-mini, #logo {
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    margin: 0;
+}
+
+#logo-mini {
+    max-width: 80px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+}
+
+#logo {
+    display: block; /* Ensures it's treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 80%; /* Adjust the size to prevent overflow */
+    height: auto;
+    padding: 1rem;
+}
+
+#header-div {
+    background-color: white;
+    border-bottom: 8px dashed var(--red);
+}
+
 /* --------------------------------------------- NAVIGATION -------------------------------------------- */
 
 /* hamburger button */
 #ham-button {
-    grid-column: 2 / 3;
     font-size: 1.5rem;
     border: 0;
     background: none;
     color: black;
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 /* appearance for the hamburger menu button when open class is off */
@@ -117,8 +110,6 @@ h3 {
 .nav-bar {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
     font-weight: 500;
     font-size: large;
     overflow: hidden;
@@ -136,7 +127,6 @@ h3 {
 .nav-bar a {
     display: none;
     padding: 1rem;
-    background-color: var(--green-light);
     color: black;
     font-family: var(--font-page), sans-serif;
     text-decoration: none;
@@ -152,7 +142,6 @@ h3 {
 }
 
 nav a:hover {
-    background-color: var(--camel-light);
     color: black;
     font-weight: 700;
 }
@@ -166,12 +155,6 @@ nav a:hover {
 .active::after {
     content: ">";
     padding-left: 1rem;
-}
-
-.selected {
-    border-color: var(--red);
-    color: var(--camel-light);
-    font-weight: 700;
 }
 
 /* --------------------------------------------- FOOTER -------------------------------------------- */
