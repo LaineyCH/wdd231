@@ -233,14 +233,18 @@
     #resources-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
     }
 
-    .messages-form,
-    .quilt-sizes {
+    #messages-form,
+    #quilt-sizes {
         max-width: 460px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 2rem;
+    }
+
+    #quilt-sizes {
+        padding-bottom: 3rem;
     }
 
 }
