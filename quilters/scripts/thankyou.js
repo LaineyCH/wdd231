@@ -60,7 +60,8 @@ showInfo.innerHTML = `
         <td>Date of registration:</td>
         <td>${formatTimestamp(show('timestamp'))}</td>
     </tr>
-    </table>`
+    </table>
+    <button id="print-button" class="bold">Print Workshop Details</button>`
 
 
 document.getElementById("print-button").addEventListener("click", function () {

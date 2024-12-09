@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add workshop form and thank you">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add print receipt feature">
+      <change afterPath="$PROJECT_DIR$/quilters/scripts/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/resources.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/scripts/thankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/thankyou.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/scripts/workshops.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/workshops.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/thankyou.html" afterDir="false" />
@@ -123,15 +123,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="61290000" />
-    </task>
-    <task id="LOCAL-00048" summary="add animation">
-      <option name="closed" value="true" />
-      <created>1732342646636</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1732342646636</updated>
+      <workItem from="1733035190969" duration="73908000" />
     </task>
     <task id="LOCAL-00049" summary="add rainbow animation">
       <option name="closed" value="true" />
@@ -517,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733669726770</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="add print receipt feature">
+      <option name="closed" value="true" />
+      <created>1733678104280</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1733678104281</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,8 +560,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update coursework list" />
-    <MESSAGE value="update table borders" />
     <MESSAGE value="remove redundant css" />
     <MESSAGE value="add quilters site plan" />
     <MESSAGE value="add form basics" />
@@ -585,6 +583,8 @@
     <MESSAGE value="edit workshops" />
     <MESSAGE value="add debugging" />
     <MESSAGE value="add workshop form and thank you" />
-    <option name="LAST_COMMIT_MESSAGE" value="add workshop form and thank you" />
+    <MESSAGE value="add print recept feature" />
+    <MESSAGE value="add print receipt feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="add print receipt feature" />
   </component>
 </project>

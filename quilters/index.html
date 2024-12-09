@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <!-- SCRIPTS -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <!-- FAVICON -->
     <link rel="icon" href="favicon.ico">
     <!--Fonts-->
@@ -45,19 +46,90 @@
 </header>
 
 <main>
-    <div id="header-stripe"></div>
+    <div class="stripe"></div>
     <section id="hero">
         <h2>Welcome to</h2>
         <picture>
             <source srcset="images/capital-quilters-logo.webp" media="(min-width: 768px)" width="1200" height="332">
             <img id="logo" src="images/capital-quilters-logo-small.webp" width="800" height="365" alt="Capital Quilters Logo">
         </picture>
+    </section>
 
+    <section id="home-content">
+        <section id="news">
+            <h2>News</h2>
+            <img class="body-img" src="images/group.webp" width="400" height="310" loading="lazy"
+                 alt="Group of ladies holding up quilt blocks" aria-label="Group of ladies holding up quilt blocks">
+            <p>We are a culturally and geographically diverse group of woman with a common interest in sewing. We
+                meet once a week for
+                a coffee morning, where we socialise and work on hand sewing projects. We also set up regular
+                workshops where we have the opportunity to teach each other new skills - sometimes they aren't even
+                sewing! <br>
+                <br>
+                Most of us come from a quilting background, but amongst us there are very talented dress-makers, bag
+                makers, cross stitchers, sashiko stitchers, etc. Some are very experienced, having sewn for 30+
+                years, and others are complete beginners, only sewing their very first project after joining our
+                group - with us you will find a warm welcome, no matter your skill or experience.
+            </p>
+        </section>
+        <section id="about-cq">
+            <h2>All About Capital Quilters</h2>
+            <img class="body-img" src="images/group.webp" width="400" height="310" loading="lazy"
+                 alt="Group of ladies holding up quilt blocks" aria-label="Group of ladies holding up quilt blocks">
+            <p>We are a culturally and geographically diverse group of woman with a common interest in sewing. We
+                meet once a week for
+                a coffee morning, where we socialise and work on hand sewing projects. We also set up regular
+                workshops where we have the opportunity to teach each other new skills - sometimes they aren't even
+                sewing! <br>
+                <br>
+                Most of us come from a quilting background, but amongst us there are very talented dress-makers, bag
+                makers, cross stitchers, sashiko stitchers, etc. Some are very experienced, having sewn for 30+
+                years, and others are complete beginners, only sewing their very first project after joining our
+                group - with us you will find a warm welcome, no matter your skill or experience.
+            </p>
+        </section>
+        <aside>
+            <h2>CQ Information</h2>
+            <section class="aside-card card">
+                <h3>Coffee Morning</h3>
+                <img src="images/coffee-morning.webp"
+                     width="400" height="210" loading="lazy" alt="Ladies at Coffee Morning" aria-label="Ladies at Coffee Morning">
+                <p>We meet, informally, EVERY Thursday morning at the Galleria Mall 3rd floor food court, Al Maryah
+                    Island, at 10:30 am, for a coffee and chat. Bring along some hand sewing to do.</p>
+            </section>
+            <section class="aside-card card">
+                <h3>Monthly Zoom</h3>
+                <img src="images/zoom-logo.webp" id="zoom-logo"
+                     width="400" height="134" loading="lazy" alt="Zoom Logo" aria-label="Zoom Logo">
+                <p>Every second Wednesday of the month at 3pm, Abu Dhabi time, we have a Zoom meeting lead by Janine.
+                    Your ideas, experiences, and photos of your wonderful work are both welcome and encouraged; these
+                    will be shared in a presentation which will hopefully lead to an interesting discussion for us all
+                    to participate in.</p>
+            </section>
+            <section class="aside-card card">
+                <h3>Newsletter</h3>
+                <p>Once a month our editor, Elaine, produces a newsletter containing all the latest news, show and tell
+                    items, articles, patterns, recommendations, and more.</p>
+                <form id="newsletter-form">
+                    <label for="email">Subscribe with your email:
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </aside>
+        <!-- Modal -->
+        <div id="newsletter-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thank You!</h2>
+                <p>Your email address has been submitted. You are now subscribed to the newsletter.</p>
+            </div>
+        </div>
     </section>
 </main>
 
 <footer>
-    <div id="footer-stripe"></div>
+    <div class="stripe"></div>
     <!--Get current year and display with copyright information-->
     <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
         &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
