@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="add home page content">
+    <list default="true" id="c020ebd3-3cc5-428d-80db-ff6cb563a2cb" name="Changes" comment="update home page content">
+      <change afterPath="$PROJECT_DIR$/quilters/scripts/resources.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quilters/scripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/scripts/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quilters/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/resources.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quilters/styles/large.css" beforeDir="false" afterPath="$PROJECT_DIR$/quilters/styles/large.css" afterDir="false" />
     </list>
@@ -118,15 +118,7 @@
       <workItem from="1730997074714" duration="7945000" />
       <workItem from="1731312084834" duration="40063000" />
       <workItem from="1731733571153" duration="129860000" />
-      <workItem from="1733035190969" duration="80135000" />
-    </task>
-    <task id="LOCAL-00050" summary="update rainbow colours">
-      <option name="closed" value="true" />
-      <created>1732350652501</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1732350652502</updated>
+      <workItem from="1733035190969" duration="81508000" />
     </task>
     <task id="LOCAL-00051" summary="update rainbow colours">
       <option name="closed" value="true" />
@@ -512,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733730653995</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="update home page content">
+      <option name="closed" value="true" />
+      <created>1733736889455</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1733736889455</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add quilters site plan" />
     <MESSAGE value="add form basics" />
     <MESSAGE value="add wireframes and favicon" />
     <MESSAGE value="update spacing and background color" />
@@ -580,6 +579,7 @@
     <MESSAGE value="add print recept feature" />
     <MESSAGE value="add print receipt feature" />
     <MESSAGE value="add home page content" />
-    <option name="LAST_COMMIT_MESSAGE" value="add home page content" />
+    <MESSAGE value="update home page content" />
+    <option name="LAST_COMMIT_MESSAGE" value="update home page content" />
   </component>
 </project>
