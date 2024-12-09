@@ -574,6 +574,10 @@ fieldset {
     margin: 0;
 }
 
+#measures-form button {
+    max-width: 335px;
+}
+
 #quilt-sizes {
     padding-bottom: 1rem;
 }

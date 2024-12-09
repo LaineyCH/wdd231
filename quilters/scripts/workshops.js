@@ -82,7 +82,7 @@ function generate_workshop_cards(filterPhrase) {
             break;
         case "decor":
             filteredWorkshops = workshops.filter((workshop) => workshop.type === "decor");
-            workshopsHeading.textContent = "Decorative Workshops";
+            workshopsHeading.textContent = "Decor Workshops";
             break;
         default:
             filteredWorkshops = workshops;

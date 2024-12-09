@@ -15,6 +15,14 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+// Close the nav-bar when clicking outside
+document.addEventListener('click', (event) => {
+    if (!navigation.contains(event.target) && !hamButton.contains(event.target)) {
+        navigation.classList.remove('open');
+        hamButton.classList.remove('open');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     pageTitle = document.querySelector('title').innerText;
     changeActiveNav(pageTitle);
