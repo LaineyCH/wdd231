@@ -16,7 +16,7 @@ async function getWorkshopsData() {
         console.log("loading workshops");
         const response = await fetch('./data/workshops.json');
         if (!response.ok) {
-            throw new Error('Could not fetch photo data');
+            throw new Error('Could not fetch workshops data');
         }
         workshops = await response.json();
 
