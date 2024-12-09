@@ -96,9 +96,9 @@ function generate_workshop_cards(filterPhrase) {
                 ? `<section class="workshop-card">
                     <h3>${workshop.name}</h3>
                     <p>${workshop.description}</p>
-                    <p>Date: ${workshop.date}</p>
-                    <p>Time: ${workshop.time}</p>
-                    <p>Location: ${workshop.location}</p>
+                    <p><strong>Date:</strong> ${workshop.date}</p>
+                    <p><strong>Time:</strong> ${workshop.time}</p>
+                    <p><strong>Location:</strong> ${workshop.location}</p>
                     <button onclick="joinWorkshop(${index})">Join Workshop</button>  
                     <div id="ws-img-box">
                         <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" width="${workshop.imgWidth}">
@@ -110,9 +110,9 @@ function generate_workshop_cards(filterPhrase) {
                 : `<section class="workshop-card">
                     <h3>${workshop.name}</h3>
                     <p>${workshop.description}</p>
-                    <p>Date: ${workshop.date}</p>
-                    <p>Time: ${workshop.time}</p>
-                    <p>Location: ${workshop.location}</p>
+                    <p><strong>Date:</strong> ${workshop.date}</p>
+                    <p><strong>Time:</strong> ${workshop.time}</p>
+                    <p><strong>Location:</strong> ${workshop.location}</p>
                     <button onclick="joinWorkshop(${index})">Join Workshop</button>
                     <div id="ws-img-box">
                         <img class="workshop-img" data-src="${workshop.imageSrc}" alt="${workshop.name}" loading="lazy" width="${workshop.imgWidth}">
