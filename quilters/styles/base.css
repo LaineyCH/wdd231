@@ -86,9 +86,9 @@ header {
 }
 
 #logo {
-    display: block; /* Ensures it's treated as a block element */
-    margin: 0 auto; /* Centers the image horizontally */
-    max-width: 80%; /* Adjust the size to prevent overflow */
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
     height: auto;
     padding: 1rem;
 }
@@ -173,11 +173,42 @@ nav a:hover {
 
 #hero {
     position: relative;
+    width: 100%;
 }
 
 #hero > h2 {
     font-size: 1.5em;
     margin-bottom: 0;
+}
+
+#news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    padding: 1rem;
+}
+
+#img1, #img2, #img3 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+#about-cq img, #tool-otm img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    background-color: var(--green-light);
+    padding: 1rem;
 }
 
 .card {
@@ -194,6 +225,53 @@ nav a:hover {
 #zoom-logo {
     width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aside-card {
+    background-color: white;
+}
+
+.aside-card img {
+    width: 100%;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#newsletter-form label {
+    display: block;
+    color: var(--green);
+    font-family: var(--font-page), sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsletter-form input[type="email"] {
+    background-color: #efefef;
+    display: block;
+    border: solid 1px var(--green);
+    border-radius: 10px;
+    padding: 0.75rem;
+    color: #4e4e4e;
+    font-family: var(--font-text), sans-serif;
+    font-size: 1em;
+
+    appearance: none;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsletter-form button {
+    width: 100%;
+    max-width: 222px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -224,7 +302,7 @@ nav a:hover {
 }
 
 .close {
-    color: #aaa;
+    color: var(--red);
     float: right;
     font-size: 28px;
     font-weight: bold;
