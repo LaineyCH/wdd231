@@ -152,7 +152,7 @@ decorButton.addEventListener('click', () => {
 
 function joinWorkshop(index) {
     // Save workshop details to localStorage
-    const selectedWorkshop = workshops[index];
+    const selectedWorkshop = filteredWorkshops[index];
     console.log("Selected Workshop:", selectedWorkshop); // Debugging line
     localStorage.setItem("selectedWorkshop", JSON.stringify(selectedWorkshop));
 
