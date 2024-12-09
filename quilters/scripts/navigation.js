@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     changeActiveNav(pageTitle);
 }, false);
 
-function changeActiveNav(activePhrase) {
+function changeActiveNav(pageTitle) {
     // change active class on nav buttons
     homeButton.classList.remove('active');
     wsButton.classList.remove('active');
     resButton.classList.remove('active');
 
-    switch (activePhrase) {
+    switch (pageTitle) {
         case "Capital Quilters Home Page":
             homeButton.classList.add('active');
             break;
