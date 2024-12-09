@@ -457,6 +457,10 @@ footer {
 #work-list li:nth-child(10) {
     animation-delay: 2s;
 }
+#work-list li:nth-child(11) {
+    animation-delay: 2.2s;
+}
+
 
 /* fade-in and slide-up effect */
 @keyframes queueUp {
