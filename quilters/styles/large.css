@@ -163,8 +163,6 @@
         flex-direction: column;
     }
 
-
-
     /* ----------------------------------------- WORKSHOPS PAGE ----------------------------------------- */
 
     #workshops-container {
@@ -210,6 +208,14 @@
     th, td {
         display: table-cell;
         text-align: left;
+    }
+
+    /* resources table */
+    .table-head {
+        display: table-cell;
+        text-align: center;
+        color: var(--red);
+        font-size: 1.2em;
     }
 }
 

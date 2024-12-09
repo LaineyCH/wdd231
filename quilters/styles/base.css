@@ -45,10 +45,12 @@ h3 {
 button {
     padding: 0.5rem;
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: 6px;
     background-color: var(--camel-light);
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
+    border-width: 1px;
+    box-shadow: 1px 1px 4px #999;
 }
 
 button:hover {
@@ -105,6 +107,7 @@ header {
     border: 0;
     background: none;
     color: black;
+    box-shadow: none;
 }
 
 /* appearance for the hamburger menu button when open class is off */
@@ -257,7 +260,7 @@ aside {
     background-color: #efefef;
     display: block;
     border: solid 1px var(--green);
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 0.75rem;
     color: #4e4e4e;
     font-family: var(--font-text), sans-serif;
@@ -487,15 +490,12 @@ fieldset {
 
 /* Submit Button */
 .aform button {
-    border: 1px solid black;
-    background-image: linear-gradient(var(--camel-light), var(--camel));
     color: black;
     font-family: var(--font-heading), serif;
     border-radius: 6px;
     padding: .8rem;
     width: 100%;
     max-width: 380px;
-    box-shadow: 1px 1px 4px #999;
     font-size: 1.5em;
     margin-top: 2rem;
     margin-left: 0;
@@ -545,34 +545,9 @@ fieldset {
     padding-bottom: 1rem;
 }
 
-#quilt-table th,
-#quilt-table td {
-    border: none;
-    padding: 0.5rem 0 0.5rem 0;
-    font-family: var(--font-page), sans-serif;
-}
-
-#quilt-table th {
-    font-family: var(--font-heading), serif;
-    padding: 1rem;
-}
-
-#quilt-table td {
-    padding: 1rem;
-}
-
-table#quilt-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .table-head {
-    text-align: center;
-    color: var(--red);
-    font-size: 1.2em;
+    display: none;
 }
-
-tr:nth-child(even) {background-color: var(--green-light);}
 
 /* --------------------------------------------- FOOTER ----------------------------------------------------- */
 
