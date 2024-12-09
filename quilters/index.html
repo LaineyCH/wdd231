@@ -30,122 +30,136 @@
 </head>
 
 <body>
-<header>
-    <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
-    <!--navigation-->
-    <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="resources.html">Resources</a>
-    </nav>
-    <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
-     'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
-    <!--button for hamburger menu, to be visible only on mobile view-->
-    <button id="ham-button" aria-label="menu"></button>
-
-</header>
-
-<main>
-    <div class="stripe"></div>
-    <section id="home-content">
-        <section id="main-content">
-            <section id="hero">
-                <h2>Welcome to</h2>
-                <picture>
-                    <source srcset="images/capital-quilters-logo.webp" media="(min-width: 768px)" width="1200" height="332">
-                    <img id="logo" src="images/capital-quilters-logo-small.webp" width="800" height="365" alt="Capital Quilters Logo">
-                </picture>
-            </section>
-            <section id="news">
-                <h2>NEWS</h2>
-                <img id="img1" class="body-img" src="images/beach-day.webp" width="400" height="300" loading="lazy"
-                     alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
-                <p>Beach Day!<br>Ten gorgeous Capital Quilters went for a beach day to Al Maya Island, taking advantage of
-                    the Ladies Day free boat ride and entry to the resort. It was a really wonderful day, lots of swimming
-                    and laughter and just generally enjoy each other’s company!
-                </p>
-                <img id="img2" class="body-img" src="images/beach-day2.webp" width="400" height="300" loading="lazy"
-                     alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
-                <img id="img3" class="body-img" src="images/beach-day3.webp" width="400" height="300" loading="lazy"
-                     alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
-            </section>
-            <section id="tool-otm">
-                <h2>Tool of the Month</h2>
-                <img class="body-img" src="images/clapper.webp" width="400" height="320" loading="lazy"
-                     alt="Tailor's Wooden Clapper" aria-label="Tailor's Wooden Clapper">
-                <p>The quilter’s clapper, or tailor’s clapper. Made of hard wood, this can be an invaluable tool to
-                    anyone who sews. Clappers were first used in England 120 years ago, in dressmaking or tailoring.
-                    Press the cool flat wooden clapper flat over a freshly pressed seam for about 5-10 seconds, and it
-                    works it’s magic, capturing the steam and locking the heat into the fabric, giving you an extra
-                    crisp and flat seam.
-                </p>
-            </section>
-            <section id="about-cq">
-                <h2>All About Capital Quilters</h2>
-                <img class="body-img" src="images/group.webp" width="400" height="310" loading="lazy"
-                     alt="Group of ladies holding up quilt blocks" aria-label="Group of ladies holding up quilt blocks">
-                <p>We are a culturally and geographically diverse group of woman with a common interest in sewing. We
-                    meet once a week for
-                    a coffee morning, where we socialise and work on hand sewing projects. We also set up regular
-                    workshops where we have the opportunity to teach each other new skills - sometimes they aren't even
-                    sewing! <br>
-                    <br>
-                    Most of us come from a quilting background, but amongst us there are very talented dress-makers, bag
-                    makers, cross stitchers, sashiko stitchers, etc. Some are very experienced, having sewn for 30+
-                    years, and others are complete beginners, only sewing their very first project after joining our
-                    group - with us you will find a warm welcome, no matter your skill or experience.
-                </p>
-            </section>
-        </section>
-        <aside>
-            <h2>CQ Information</h2>
-            <section class="aside-card card">
-                <h3>Coffee Morning</h3>
-                <img src="images/coffee-morning.webp"
-                     width="400" height="210" loading="lazy" alt="Ladies at Coffee Morning" aria-label="Ladies at Coffee Morning">
-                <p>We meet, informally, EVERY Thursday morning at the Galleria Mall 3rd floor food court, Al Maryah
-                    Island, at 10:30 am, for a coffee and chat. Bring along some hand sewing to do.</p>
-            </section>
-            <section class="aside-card card">
-                <h3>Monthly Zoom</h3>
-                <img src="images/zoom-logo.webp" id="zoom-logo"
-                     width="400" height="134" loading="lazy" alt="Zoom Logo" aria-label="Zoom Logo">
-                <p>Every second Wednesday of the month at 3pm, Abu Dhabi time, we have a Zoom meeting lead by Janine.
-                    Your ideas, experiences, and photos of your wonderful work are both welcome and encouraged; these
-                    will be shared in a presentation which will hopefully lead to an interesting discussion for us all
-                    to participate in.</p>
-            </section>
-            <section class="aside-card card">
-                <h3>Newsletter</h3>
-                <p>Once a month our editor, Elaine, produces a newsletter containing all the latest news, show and tell
-                    items, articles, patterns, recommendations, and more.</p>
-                <form id="newsletter-form">
-                    <label for="email">Subscribe with your email:
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
-        </aside>
-        <!-- Modal -->
-        <div id="newsletter-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Thank You!</h2>
-                <p>Your email address has been submitted. You will start receiving the newsletter from the next issue.</p>
+    <header>
+        <div class="header-container">
+            <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" alt="Capital Quilters Logo">
+            <div class="header-actions">
+                <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
+                    'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
+                <button id="ham-button" aria-label="menu"></button>
             </div>
         </div>
-    </section>
-</main>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
 
-<footer>
-    <div class="stripe"></div>
-    <!--Get current year and display with copyright information-->
-    <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
-        &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
+    <main>
+        <div class="stripe"></div>
+        <section id="home-content">
+            <section id="main-content">
+                <section id="hero">
+                    <h2>Welcome to</h2>
+                    <picture>
+                        <source srcset="images/capital-quilters-logo.webp" media="(min-width: 768px)" width="1200" height="332">
+                        <img id="logo" src="images/capital-quilters-logo-small.webp" width="800" height="365" alt="Capital Quilters Logo">
+                    </picture>
+                </section>
+                <section id="news">
+                    <h2>NEWS</h2>
+                    <img id="img1" class="body-img" src="images/beach-day.webp" width="400" height="300" loading="lazy"
+                         alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
+                    <p>Beach Day!<br>Ten gorgeous Capital Quilters went for a beach day to Al Maya Island, taking advantage of
+                        the Ladies Day free boat ride and entry to the resort. It was a really wonderful day, lots of swimming
+                        and laughter and just generally enjoy each other’s company!
+                    </p>
+                    <img id="img2" class="body-img" src="images/beach-day2.webp" width="400" height="300" loading="lazy"
+                         alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
+                    <img id="img3" class="body-img" src="images/beach-day3.webp" width="400" height="300" loading="lazy"
+                         alt="Al Maya Island Beach" aria-label="Al Maya Island Beach">
+                </section>
+                <section id="tool-otm">
+                    <h2>Tool of the Month</h2>
+                    <img class="body-img" src="images/clapper.webp" width="400" height="320" loading="lazy"
+                         alt="Tailor's Wooden Clapper" aria-label="Tailor's Wooden Clapper">
+                    <p>The quilter’s clapper, or tailor’s clapper. Made of hard wood, this can be an invaluable tool to
+                        anyone who sews. Clappers were first used in England 120 years ago, in dressmaking or tailoring.
+                        Press the cool flat wooden clapper flat over a freshly pressed seam for about 5-10 seconds, and it
+                        works it’s magic, capturing the steam and locking the heat into the fabric, giving you an extra
+                        crisp and flat seam.
+                    </p>
+                </section>
+                <section id="about-cq">
+                    <h2>All About Capital Quilters</h2>
+                    <img class="body-img" src="images/group.webp" width="400" height="310" loading="lazy"
+                         alt="Group of ladies holding up quilt blocks" aria-label="Group of ladies holding up quilt blocks">
+                    <p>We are a culturally and geographically diverse group of woman with a common interest in sewing. We
+                        meet once a week for
+                        a coffee morning, where we socialise and work on hand sewing projects. We also set up regular
+                        workshops where we have the opportunity to teach each other new skills - sometimes they aren't even
+                        sewing! <br>
+                        <br>
+                        Most of us come from a quilting background, but amongst us there are very talented dress-makers, bag
+                        makers, cross stitchers, sashiko stitchers, etc. Some are very experienced, having sewn for 30+
+                        years, and others are complete beginners, only sewing their very first project after joining our
+                        group - with us you will find a warm welcome, no matter your skill or experience.
+                    </p>
+                </section>
+            </section>
+            <aside>
+                <h2>CQ Information</h2>
+                <section class="aside-card card">
+                    <h3>Coffee Morning</h3>
+                    <img src="images/coffee-morning.webp"
+                         width="400" height="210" loading="lazy" alt="Ladies at Coffee Morning" aria-label="Ladies at Coffee Morning">
+                    <p>We meet, informally, EVERY Thursday morning at the Galleria Mall 3rd floor food court, Al Maryah
+                        Island, at 10:30 am, for a coffee and chat. Bring along some hand sewing to do.</p>
+                </section>
+                <section class="aside-card card">
+                    <h3>Monthly Zoom</h3>
+                    <img src="images/zoom-logo.webp" id="zoom-logo"
+                         width="400" height="134" loading="lazy" alt="Zoom Logo" aria-label="Zoom Logo">
+                    <p>Every second Wednesday of the month at 3pm, Abu Dhabi time, we have a Zoom meeting lead by Janine.
+                        Your ideas, experiences, and photos of your wonderful work are both welcome and encouraged; these
+                        will be shared in a presentation which will hopefully lead to an interesting discussion for us all
+                        to participate in.</p>
+                </section>
+                <section class="aside-card card">
+                    <h3>Newsletter</h3>
+                    <p>Once a month our editor, Elaine, produces a newsletter containing all the latest news, show and tell
+                        items, articles, patterns, recommendations, and more.</p>
+                    <form id="newsletter-form">
+                        <label for="email">Subscribe with your email:
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </aside>
+            <!-- Modal -->
+            <div id="newsletter-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Thank You!</h2>
+                    <p>Your email address has been submitted. You will start receiving the newsletter from the next issue.</p>
+                </div>
+            </div>
+        </section>
+        <div class="stripe"></div>
+    </main>
 
-    <!--Get the date that the document was last modified and display-->
-    <p>This webpage was last modified on <span id="lastmodified"></span></p>
-</footer>
+    <footer>
+        <div id="contact">
+            <p class="bold"><img src="favicon.ico" alt="Capital Quilters Icon" width="16" height="16">&nbsp; Capital Quilters Guild</p>
+            <p>Abu Dhabi</p>
+            <p>United Arab Emirates</p>
+            <p>contact@capital-quilters.ae</p>
+        </div>
+        <div>
+            <img class="socials" src="images/fb-icon.webp" alt="FaceBook" width="100" height="100" />
+            <img class="socials" src="images/x-icon.webp" alt="Twitter" width="100" height="99" />
+            <img class="socials" src="images/in-icon.webp" alt="Linked In" width="100" height="100" />
+        </div>
+        <div id="info">
+            <p>WDD 231 Class Project &nbsp; Elaine Henson</p>
+            <!--Get current year and display with copyright information-->
+            <p id="copyright"> &#169; <span id="currentyear"></span> Capital Quilters Website </p>
+            <!--Get the date that the document was last modified and display-->
+            <p>Last modified:</p>
+            <div id="lastmodified"></div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -30,94 +30,108 @@
 </head>
 
 <body>
-<header>
-    <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
-    <!--navigation-->
-    <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="resources.html">Resources</a>
-    </nav>
-    <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
-     'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
-    <!--button for hamburger menu, to be visible only on mobile view-->
-    <button id="ham-button" aria-label="menu"></button>
+    <header>
+        <div class="header-container">
+            <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" alt="Capital Quilters Logo">
+            <div class="header-actions">
+                <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
+                    'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
+                <button id="ham-button" aria-label="menu"></button>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
 
-</header>
-
-<main>
-    <div class="stripe"></div>
-    <section id="resources-section">
-        <section id="measures-content">
-            <form class="aform card" id="measures-form">
-                <fieldset>
-                    <h2>Convert Between Inches and Centimeters</h2>
-                    <label class="input-title">In Inches: <input type="number" id="inch" step=".01"></label>
-                    <button class="convert-button" id="convert-to-cm" type="button">Convert To Centimeters</button>
-                    <label class="input-title">In Centimeters: <input type="number" id="cm" step=".01"></label>
-                    <button class="convert-button" id="convert-to-inch" type="button">Convert To Inches</button>
-                </fieldset>
-            </form>
-        </section>
-        <section>
-            <section id="quilt-sizes" class="card">
-                <h2>Quilt Sizes</h2>
-                <table id="quilt-table">
-                    <tr>
-                        <th class="table-head">Bed Size</th>
-                        <th class="table-head">Inches</th>
-                        <th class="table-head">Centimeters</th>
-                    </tr>
-                    <tr>
-                        <th>Baby</th>
-                        <td>30 x 40"</td>
-                        <td>76 x 100 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Crib</th>
-                        <td>36 x 52"</td>
-                        <td>92 x 132 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Throw</th>
-                        <td>50 x 65"</td>
-                        <td>130 x 165 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Single</th>
-                        <td>70 x 90"</td>
-                        <td>180 x 230 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Double</th>
-                        <td>85 x 100"</td>
-                        <td>215 x 255 cm</td>
-                    </tr>
-                    <tr>
-                        <th>Queen</th>
-                        <td>90 x 108"</td>
-                        <td>230 x 275 cm</td>
-                    </tr>
-                    <tr>
-                        <th>King</th>
-                        <td>110 x 110"</td>
-                        <td>280 x 280 cm</td>
-                    </tr>
-                </table>
+    <main>
+        <div class="stripe"></div>
+        <section id="resources-section">
+            <section id="measures-content">
+                <form class="aform card" id="measures-form">
+                    <fieldset>
+                        <h2>Convert Between Inches and Centimeters</h2>
+                        <label class="input-title">In Inches: <input type="number" id="inch" step=".01"></label>
+                        <button class="convert-button" id="convert-to-cm" type="button">Convert To Centimeters</button>
+                        <label class="input-title">In Centimeters: <input type="number" id="cm" step=".01"></label>
+                        <button class="convert-button" id="convert-to-inch" type="button">Convert To Inches</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <section id="quilt-sizes" class="card">
+                    <h2>Quilt Sizes</h2>
+                    <table id="quilt-table">
+                        <tr>
+                            <th class="table-head">Bed Size</th>
+                            <th class="table-head">Inches</th>
+                            <th class="table-head">Centimeters</th>
+                        </tr>
+                        <tr>
+                            <th>Baby</th>
+                            <td>30 x 40"</td>
+                            <td>76 x 100 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Crib</th>
+                            <td>36 x 52"</td>
+                            <td>92 x 132 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Throw</th>
+                            <td>50 x 65"</td>
+                            <td>130 x 165 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Single</th>
+                            <td>70 x 90"</td>
+                            <td>180 x 230 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Double</th>
+                            <td>85 x 100"</td>
+                            <td>215 x 255 cm</td>
+                        </tr>
+                        <tr>
+                            <th>Queen</th>
+                            <td>90 x 108"</td>
+                            <td>230 x 275 cm</td>
+                        </tr>
+                        <tr>
+                            <th>King</th>
+                            <td>110 x 110"</td>
+                            <td>280 x 280 cm</td>
+                        </tr>
+                    </table>
+                </section>
             </section>
         </section>
-    </section>
-</main>
+        <div class="stripe"></div>
+    </main>
 
-<footer>
-    <div class="stripe"></div>
-    <!--Get current year and display with copyright information-->
-    <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
-        &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
-
-    <!--Get the date that the document was last modified and display-->
-    <p>This webpage was last modified on <span id="lastmodified"></span></p>
-</footer>
+    <footer>
+        <div id="contact">
+            <p class="bold"><img src="favicon.ico" alt="Capital Quilters Icon" width="16" height="16">&nbsp; Capital Quilters Guild</p>
+            <p>Abu Dhabi</p>
+            <p>United Arab Emirates</p>
+            <p>contact@capital-quilters.ae</p>
+        </div>
+        <div>
+            <img class="socials" src="images/fb-icon.webp" alt="FaceBook" width="100" height="100" />
+            <img class="socials" src="images/x-icon.webp" alt="Twitter" width="100" height="99" />
+            <img class="socials" src="images/in-icon.webp" alt="Linked In" width="100" height="100" />
+        </div>
+        <div id="info">
+            <p>WDD 231 Class Project &nbsp; Elaine Henson</p>
+            <!--Get current year and display with copyright information-->
+            <p id="copyright"> &#169; <span id="currentyear"></span> Capital Quilters Website </p>
+            <!--Get the date that the document was last modified and display-->
+            <p>Last modified:</p>
+            <div id="lastmodified"></div>
+        </div>
+    </footer>
 </body>
 
 </html>

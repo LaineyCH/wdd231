@@ -30,45 +30,59 @@
 </head>
 
 <body>
-<header>
-    <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" width="500" height="257" alt="Capital Quilters Logo">
-    <!--navigation-->
-    <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="resources.html">Resources</a>
-    </nav>
-    <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
-     'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
-    <!--button for hamburger menu, to be visible only on mobile view-->
-    <button id="ham-button" aria-label="menu"></button>
+    <header>
+        <div class="header-container">
+            <img id="logo-mini" src="images/capital-quilters-logo-mini.webp" alt="Capital Quilters Logo">
+            <div class="header-actions">
+                <button id="contact-button" class="bold" onclick="window.location.href='mailto:admin@capitalquilters.com?subject=' +
+                    'Capital%20Quilters%20Website%20Inquiry&body=Hello, I have a question about...';">Contact Guild</button>
+                <button id="ham-button" aria-label="menu"></button>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
 
-</header>
-
-<main>
-    <div class="stripe"></div>
-    <section>
-        <section id="buttons">
-            <button id="all-button" class="workshop-button">All Workshops</button>
-            <button id="quilt-button" class="workshop-button">Quilting Workshops</button>
-            <button id="bag-button" class="workshop-button">Bag Workshops</button>
-            <button id="dress-button" class="workshop-button">Dressmaking Workshops</button>
-            <button id="decor-button" class="workshop-button">Decorative Workshops</button>
+    <main>
+        <div class="stripe"></div>
+        <section>
+            <section id="buttons">
+                <button id="all-button" class="workshop-button">All Workshops</button>
+                <button id="quilt-button" class="workshop-button">Quilting Workshops</button>
+                <button id="bag-button" class="workshop-button">Bag Workshops</button>
+                <button id="dress-button" class="workshop-button">Dressmaking Workshops</button>
+                <button id="decor-button" class="workshop-button">Decorative Workshops</button>
+            </section>
+            <h2 id="workshops-heading"></h2>
+            <section id="workshops-container"></section>
         </section>
-        <h2 id="workshops-heading"></h2>
-        <section id="workshops-container"></section>
-    </section>
-</main>
+        <div class="stripe"></div>
+    </main>
 
-<footer>
-    <div class="stripe"></div>
-    <!--Get current year and display with copyright information-->
-    <p id="copyright">&#169; <span id="currentyear"></span> &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Elaine Henson
-        &nbsp; &nbsp; 🧵 &nbsp; &nbsp; Abu Dhabi</p>
-
-    <!--Get the date that the document was last modified and display-->
-    <p>This webpage was last modified on <span id="lastmodified"></span></p>
-</footer>
+    <footer>
+        <div id="contact">
+            <p class="bold"><img src="favicon.ico" alt="Capital Quilters Icon" width="16" height="16">&nbsp; Capital Quilters Guild</p>
+            <p>Abu Dhabi</p>
+            <p>United Arab Emirates</p>
+            <p>contact@capital-quilters.ae</p>
+        </div>
+        <div>
+            <img class="socials" src="images/fb-icon.webp" alt="FaceBook" width="100" height="100" />
+            <img class="socials" src="images/x-icon.webp" alt="Twitter" width="100" height="99" />
+            <img class="socials" src="images/in-icon.webp" alt="Linked In" width="100" height="100" />
+        </div>
+        <div id="info">
+            <p>WDD 231 Class Project &nbsp; Elaine Henson</p>
+            <!--Get current year and display with copyright information-->
+            <p id="copyright"> &#169; <span id="currentyear"></span> Capital Quilters Website </p>
+            <!--Get the date that the document was last modified and display-->
+            <p>Last modified:</p>
+            <div id="lastmodified"></div>
+        </div>
+    </footer>
 </body>
 
 </html>

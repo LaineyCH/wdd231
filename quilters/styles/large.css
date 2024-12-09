@@ -3,24 +3,54 @@
         min-height: 300px;
     }
 
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 1rem;
+        height: 5rem;
+    }
+
+    .header-actions {
+        gap: 1rem;
+    }
+
     .nav-bar {
+        display: flex;
         flex-direction: row;
+        gap: 1rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         background-color: transparent;
-        max-height: 80px;
-        opacity: 1;
-        width: 500px;
+        max-height: none;
+        width: 400px;
     }
 
     .nav-bar a {
-        display: block;
-        flex: 1 1 100%;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 1.5rem;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav-bar a:first-child {
+        border-top: none;
+        padding-top: 0.5rem;
+    }
+
+    .nav-bar a:last-child {
+        border-bottom: none;
     }
 
     #contact-button {
         min-width: 132px;
+        margin-left: auto; /* Chat GPT */
     }
 
     #ham-button {
@@ -183,7 +213,7 @@
     /* ---------------------------------------------- FORM --------------------------------------------- */
 
     #workshop-form {
-        width: 80%;
+        width: 50%;
     }
 
     /* --------------------------------------------- TABLE ---------------------------------------------- */
@@ -220,6 +250,10 @@
 }
 
 @media (min-width: 1190px) {
+    .nav-bar {
+        width: 500px;
+    }
+
     #home-content {
         grid-template-columns: minmax(70%, auto) minmax(30%, auto);
     }
@@ -244,10 +278,33 @@
         margin-bottom: 1rem;
     }
 
-    #messages-form,
     #quilt-sizes {
         max-width: 500px;
         margin: 1rem;
+    }
+
+    #measures-form h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* -------------------- RESOURCES PAGE ----------------------- */
+
+    footer {
+        display: grid;
+        grid-template-columns: 34% 32% 34%;
+    }
+
+    #contact {
+        text-align: right;
+    }
+
+    #info {
+        text-align: left;
+    }
+
+    .socials {
+        padding-top: 1.5rem;
     }
 
 }
