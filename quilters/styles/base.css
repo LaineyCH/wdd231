@@ -44,6 +44,8 @@ h3 {
 
 img {
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    width: 100%;
+    height: auto;
 }
 
 button {
@@ -51,6 +53,7 @@ button {
     margin: 1rem;
     border-radius: 6px;
     background-color: var(--camel-light);
+    color: black;
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
     border-width: 1px;
@@ -606,6 +609,10 @@ footer img {
 
 footer p, #lastmodified {
     font-size: 0.9rem;
+}
+
+.favicon-img {
+    width: 16px;
 }
 
 /* Formatting for large view ports above 350px wide */
