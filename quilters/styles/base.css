@@ -57,6 +57,7 @@ button {
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
     border-width: 1px;
+    border-color: black;
     box-shadow: 1px 1px 4px #999;
 }
 
