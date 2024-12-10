@@ -588,6 +588,51 @@ fieldset {
     display: none;
 }
 
+.puzzle-container {
+    position: relative;
+    width: 264px;
+    height: 300px;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.puzzle-piece {
+    position: absolute;
+    width: 264px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: assemble 2s ease-in-out forwards;
+}
+
+.puzzle-piece.explode {
+    animation: explode 1s ease-in-out forwards;
+}
+
+/* Animation to assemble puzzle */
+@keyframes assemble {
+    from {
+        transform: translate(calc(var(--x) * 200px), calc(var(--y) * 200px)) scale(0.5);
+        opacity: 0.8;
+    }
+    to {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation to explode puzzle */
+@keyframes explode {
+    from {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(calc(var(--x) * 200px), calc(var(--y) * 200px)) scale(0.5);
+        opacity: 0.8;
+    }
+}
+
 /* --------------------------------------------- FOOTER ----------------------------------------------------- */
 
 footer {
