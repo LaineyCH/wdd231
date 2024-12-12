@@ -425,8 +425,8 @@ td {
 }
 
 a.workshop-link {
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: var(--green);
 }
 
 a.workshop-link:hover {
