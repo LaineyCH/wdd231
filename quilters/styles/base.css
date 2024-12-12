@@ -228,12 +228,16 @@ nav a:hover {
     padding: 1rem;
 }
 
-#img1, #img2, #img3 {
+#img1, #img2, #img3, #tool-otm img, #about-cq img {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#img3 {
+    margin-top: 1rem;
 }
 
 #about-cq img, #tool-otm img {
@@ -259,7 +263,7 @@ aside {
 }
 
 #zoom-logo {
-    width: 50%;
+    width: 100px;
     height: auto;
     margin-left: auto;
     margin-right: auto;

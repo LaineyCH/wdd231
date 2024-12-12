@@ -113,7 +113,8 @@
         text-align: center;
     }
 
-    #img1, #img2, #img3 {
+    #img1, #img2, #img3, #tool-otm img, #about-cq img {
+        max-width: 100%;
         margin: 0;
         padding: 0;
     }
